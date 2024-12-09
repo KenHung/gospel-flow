@@ -24,7 +24,7 @@ flowchart TD
 ```
 
 ## 詳細步驟
-[詳細步驟](detailed_steps.md)
+[詳細步驟](script.md)
 
 # 反對意見與比喻
 ## 好人測試
