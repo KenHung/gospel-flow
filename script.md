@@ -155,4 +155,112 @@
 如果佢唔識答，你可以話：「如果你喺火場入面，消防員冒住生命危險救咗你出嚟，咁你會想點樣回報佢呀？」【等佢答】
 「啱啦，你一定唔會想打佢一拳，係咪？同樣道理，耶穌為咗救我哋免受地獄嘅火，犧牲咗祂自己，咁你會點樣回應耶穌呢？」
 
-from https://www.needgod.net/script
+“If you’re unconscious in the fire, you’re relying on the fireman to do all the work as you can’t help him
+at all because you’re unconscious, Same for Jesus, we are dead in our sins and can’t assist Jesus in
+saving us from the eternal Hell fire, He does all the work by dying on the cross for our sins, make
+sense?”
+And because we are thankful to Jesus for what he has done for us, that
+motivates us now to live our lives for him and avoid sinning. Does that make
+sense?
+We don't stop our sins and do good things for Jesus to save us, we do good
+things for him and desire to live better because he HAS saved us. Make sense?
+Yes..
+29. Do you know how you can find out more about Jesus?
+The Bible
+30. Yep! Do you have a bible and do you read it much?
+If they say No, you can share a link with them to get one.
+31. Think of it like this, If you ate food only once a week, would you be very
+strong?
+no..
+Right. We eat food everyday to stay strong physically. Our bible is like our
+spiritual food.
+32. So if the bible is our spiritual food, how often do you think you should read
+the bible then to be strong spiritually?
+Everyday..
+34. Do you go to church?... what kind of church is it?
+Yes..
+If they answer no, then say “Church is where you'll be able to hear God's word being preached and
+where you'll meet other Christians who can help you in your faith. Does that sound good?”
+Here's a link you can use to find a great church in your area (send church link)
+35. Do they teach the same message we’ve spoken about here to be saved from
+our sins?
+If they answer yes, then that’s great. If they answer not really. Ask “So do you think it's a good
+idea to keep attending a church that teaches the wrong way to heaven?”
+Ask if they are able to get to another church on their own but if they can’t, Suggest the following:
+- Spend time in personal prayer and reading the Bible to strengthen your faith on your own.
+- Think about who you could share the gospel with at your church, because you want them to be
+saved.
+- Make sure to check anything you are hearing at church, with the Bible.
+- Don't be bowing down to any statues/pictures or praying to anyone other than God.
+- Listen in to some good preachers online, such as Alistair Begg (search his name on YouTube).
+36. Also, think of your family and friends, if you asked them, "What's the reason
+you'll go to heaven?" what would their answer be?
+I’m not sure.. or they may say they’ll go to heaven because of Jesus..
+If they answer with doing good deeds gets them to heaven then ask: “So where would they end
+up?”(Hell) Refer to good deeds analogy in Q10 if needed.
+37. And since you don't want them to go to hell, how could you help them not
+to end up there?
+Tell them about the Gospel..
+38. So let me ask you, What if God asked you this "Why should I not send you to
+hell for all the sins you've done", how would you answer?
+should be the same answer as for Q22. If it's not the same answer as Q22 you may need to refer
+to analogies again in Q10.
+39. Now, remember at the beginning of this chat, what DID you think was
+getting you to heaven?
+Doing good/asking for forgiveness etc.
+If they answer with "Because Jesus died for my sins", you may need to remind them at the start they
+weren't pointing to their actions (if they were) and ask them to remind you of why we get to heaven
+again.
+So, since you were trusting in yourself to get you to heaven, if you had died
+before this chat, where would you have ended up?
+Hell..
+If they say heaven, ask them “But what should we be trusting in as the ONLY reason we go to heaven?”
+…Jesus. “So, you weren't trusting in Jesus but in your own actions and by trusting in your own actions
+where would you have gone?”... hell
+39. But if you died right now, where will you end up?
+Heaven..
+If they still think hell, then ask them why and see what they are still trusting in to get them to heaven..
+So awesome you understand all this, if you’d like to see some more awesome
+stuff, check us out on the social media platforms: needgod.net (press Socials button)
+Do you have any other questions I can help you with?
+This has been a fantastic chat! My name is …… been great chatting with you.
+Helpful Tips
+HOW TO PRAY
+The only instruction we ae given in scripture is to pray to the Father, in the name of Jesus through the
+power of the Holy Spirit.
+LEAD TO THE TRUTH
+You can't convert or save anyone, Only God can... We can lead a person to the truth but sadly we can't
+make them believe it. If they don't believe Jesus paid for their sins, then they will be paying for them
+themselves in hell. Just keep them in prayer that God can soften their heart.
+WHO CREATED GOD
+God wasn't created, he's always been there. If you agree that time and space had a beginning, then
+something outside of time had to create it as we know that things just can't create themselves. If 
+something is outside of time, then that something has to be timeless. If something is timeless, they have
+no beginning, they have no end, they have always been there from eternal past to eternal future.
+Gift Analogy:
+If someone isn’t understanding that works are required to be saved. Point out that heaven is a gift
+(Romans 6:23) and then use this example:
+If I said "I'll give you a gift of $20 if you wash my car". Is that $20 really a gift? {wait for their answer} If
+you have to wash my car to get the $20 it wouldn't be a free gift.
+Same with Jesus, he doesn't say "I'll die for you if you do good things" - because that wouldn't be a free
+gift. He says "I'll die for you as a gift", you simply just need to accept that gift by trusting he died for you.
+So do you have to do good things to go to heaven then?
+If the person is still struggling with trusting in works:
+Can I ask you, out of 100, how much of the work needed to get you to heaven did Jesus for you?
+Right, so how much work is left over for you to do to go to heaven?
+So that is why good works aren't required for us to go to heaven. Jesus gives us heaven as a free gift, we
+just need to accept his gift by trusting he's already done all the work for us in paying for our sins. Does
+that make sense?
+$1M Gift analogy:
+If a person stood at the front of your house and had a free gift of $1m in a briefcase with a sign "Free
+Gift" above his head, you have 2 options, you can either accept it or reject it.
+If you choose to accept it then in response to that amazing generosity you may be then inclined to do
+good things for the person in return as a sign of Gratitude. But the good things you do in return aren't
+needed to receive the gift, you're doing for them as you're grateful.
+But, just because you're "aware" he stands there with a gift of $1M doesn't mean you've received it.
+Same for Jesus, He offers a free gift for us to either accept or reject and as for the above, we would now
+want to do good things in return to show our gratitude but just because I'm aware that He died for my
+sins, doesn't mean I've accepted His Gift.
+The new inclination for wanting to do good works now would be as a result of me having received His
+amazing gift. If a person still "loves' their sin and doesn't show any change would be an indicator that
+they're only "aware" of what Jesus has done instead of accepting "what" Jesus has done.
