@@ -24,7 +24,7 @@ flowchart TD
 ```
 
 ## 詳細步驟
-[詳細步驟](script.md)
+[詳細步驟](https://gist.github.com/KenHung/94a9b93ded2acff3f7eb453338e17a68#file-script-md)
 
 # 反對意見與比喻
 ## 好人測試
