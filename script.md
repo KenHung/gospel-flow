@@ -117,126 +117,126 @@
 「啱啦，所以我哋嘅答案唔應該係『因為我…』，而係用第三人稱講『因為耶穌…』。咁你會點樣重新答神嘅問題呀？」
 * 如果佢想要聖經經文支持，可以用《馬太福音》7:22-23：「當那日必有許多人對我說：『主啊，主啊，我們不是奉你的名傳道，奉你的名趕鬼，奉你的名行許多異能嗎？』我就明明地告訴他們說：『我從來不認識你們，你們這些作惡的人，離開我去吧！』」
 
-22. 假設有個朋友同你講佢會去天堂，因為佢係個好人。咁你覺得佢死咗會去邊？
+### 22. 假設有個朋友同你講佢會去天堂，因為佢覺得自己係個好人。咁你覺得佢死咗會去邊？
 地獄。
-如果佢話天堂，問佢：「咁神會因為咩原因畀人去天堂㗎？」...耶穌。
-「啱啦，所以你嘅朋友係相信耶穌帶佢去天堂，定係相信自己嘅行為？」...相信自己嘅行為。
+* 如果佢話天堂，問佢：「咁神會因為咩原因畀人去天堂㗎？」...耶穌。
+「啱啦，所以你嘅朋友係相信耶穌令佢去天堂，定係相信自己嘅行為？」...相信自己嘅行為。
 「啱啦，因為佢係相信自己嘅行為，所以佢會去邊？」...地獄。
 「啱啦，點解呢？」
 
-23. 但如果另一個朋友同你講：「我會去天堂，因為有兩個原因。第一，因為耶穌為我嘅罪死咗；第二，因為我係個好人。」咁你覺得佢會去天堂定地獄？
+### 23. 但如果另一個朋友同你講：「我會去天堂，因為有兩個原因。第一，因為耶穌為我嘅罪死；第二，因為我係個好人。」咁你覺得佢會去天堂定地獄？
 地獄。
-如果佢話天堂，問：「如果佢係靠兩樣嘢，咁其實佢就唔係100%信靠耶穌，而係50%靠耶穌，50%靠自己嘅行為。咁如果耶穌只係負責一半，佢會去邊？」...地獄。
+* 如果佢話天堂，問：「如果佢係靠兩樣嘢，咁其實佢就唔係100%信靠耶穌，而係50%靠耶穌，50%靠自己嘅行為。咁如果耶穌只係負責一半，佢會去邊？」...地獄。
 「所以我哋一定要單單相信耶穌係唯一嘅原因，而唔係靠自己嘅行為。明唔明呀？」
 
-24. 咁喺 0-100% 嘅比例入面，你有幾肯定自己死咗會去天堂？
+### 24. 咁喺 0-100% 嘅比例入面，你有幾肯定自己死咗會去天堂？
 100%。
-如果佢話少過100%，問：「咁頭先講過係咩原因令你可以入天堂㗎？」...耶穌。
+* 如果佢話少過100%，問：「咁頭先講過係咩原因令你可以入天堂㗎？」...耶穌。
 「啱啦，咁耶穌係幫你支付咗幾多懲罰？」...所有。
-「咁仲有幾多懲罰係要留低俾你去地獄承擔㗎？」...冇咗。
+「咁仲有幾多懲罰係要留低俾你去地獄承擔㗎？」...冇。
 「咁如果你相信呢樣嘢，咁喺 0-100% 嘅比例入面，你可以有幾肯定會去天堂？」...100%。
 
-如果佢仲係唔肯定，問佢咩原因令佢唔夠100%肯定，然後幫佢解釋問題，提醒佢耶穌已經為佢嘅過去、現在同未來嘅罪支付咗代價。
+* 如果佢仲係唔肯定，問佢咩原因令佢唔夠100%肯定，然後幫佢解釋問題，提醒佢耶穌已經為佢過去、現在同未來嘅罪付上代價。
 
-25. 咁做好事係咪同入天堂有關係？
+### 25. 咁做好事係咪同入天堂有關係？
 冇關係。
-如果佢話有，問：「咁係我哋做好事拯救咗我哋，定係耶穌死喺十字架拯救咗我哋？」如果需要，可以用問題 10嘅做好事比喻再解釋。
+* 如果佢話有，問：「咁係我哋做好事拯救咗我哋，定係耶穌死喺十字架拯救咗我哋？」如果需要，可以用問題 10嘅做好事比喻再解釋。
 
-26. 咁我哋需唔需要求原諒先可以入天堂？
+### 26. 咁我哋需唔需要祈求原諒先可以入天堂？
 唔需要。
-如果佢話需要，問：「咁係因為求原諒拯救咗我哋，定係耶穌死喺十字架拯救咗我哋？」如果需要，可以用問題 10嘅做好事比喻再解釋。
+* 如果佢話需要，問：「咁係因為祈求原諒拯救我哋，定係耶穌死喺十字架拯救我哋？」如果需要，可以用問題 10嘅做好事比喻再解釋。
 
-27. 咁我哋需唔需要受洗先可以入天堂？
+### 27. 咁我哋需唔需要受洗先可以入天堂？
 唔需要。
-如果佢話需要，問：「咁係因為受洗拯救咗我哋，定係耶穌死喺十字架拯救咗我哋？」
+* 如果佢話需要，問：「咁係因為受洗拯救我哋，定係耶穌死喺十字架拯救我哋？」
 
-28. 如果做好事同入天堂冇關係，咁我哋點解要做好事呢？
-因為感激。
-如果佢唔識答，你可以話：「如果你喺火場入面，消防員冒住生命危險救咗你出嚟，咁你會想點樣回報佢呀？」【等佢答】
-「啱啦，你一定唔會想打佢一拳，係咪？同樣道理，耶穌為咗救我哋免受地獄嘅火，犧牲咗祂自己，咁你會點樣回應耶穌呢？」
+### 28. 如果做好事同入天堂冇關係，咁我哋點解要做好事呢？
+因為感恩。
+* 如果佢唔識答，你可以話：「如果你喺火場入面，消防員冒住生命危險救咗你出嚟，咁你會想點樣回報佢呀？」【等佢答】
+「啱啦，你一定唔會想打佢一拳，係咪？同樣道理，耶穌為咗救我哋免受地獄嘅火，犧牲咗佢自己，咁你會點樣回應耶穌呢？」
 
-“If you’re unconscious in the fire, you’re relying on the fireman to do all the work as you can’t help him
-at all because you’re unconscious, Same for Jesus, we are dead in our sins and can’t assist Jesus in
-saving us from the eternal Hell fire, He does all the work by dying on the cross for our sins, make
-sense?”
-And because we are thankful to Jesus for what he has done for us, that
-motivates us now to live our lives for him and avoid sinning. Does that make
-sense?
-We don't stop our sins and do good things for Jesus to save us, we do good
-things for him and desire to live better because he HAS saved us. Make sense?
-Yes..
-29. Do you know how you can find out more about Jesus?
-The Bible
-30. Yep! Do you have a bible and do you read it much?
-If they say No, you can share a link with them to get one.
-31. Think of it like this, If you ate food only once a week, would you be very
-strong?
-no..
-Right. We eat food everyday to stay strong physically. Our bible is like our
-spiritual food.
-32. So if the bible is our spiritual food, how often do you think you should read
-the bible then to be strong spiritually?
-Everyday..
-34. Do you go to church?... what kind of church is it?
-Yes..
-If they answer no, then say “Church is where you'll be able to hear God's word being preached and
-where you'll meet other Christians who can help you in your faith. Does that sound good?”
-Here's a link you can use to find a great church in your area (send church link)
-35. Do they teach the same message we’ve spoken about here to be saved from
-our sins?
-If they answer yes, then that’s great. If they answer not really. Ask “So do you think it's a good
-idea to keep attending a church that teaches the wrong way to heaven?”
-Ask if they are able to get to another church on their own but if they can’t, Suggest the following:
-- Spend time in personal prayer and reading the Bible to strengthen your faith on your own.
-- Think about who you could share the gospel with at your church, because you want them to be
-saved.
-- Make sure to check anything you are hearing at church, with the Bible.
-- Don't be bowing down to any statues/pictures or praying to anyone other than God.
-- Listen in to some good preachers online, such as Alistair Begg (search his name on YouTube).
-36. Also, think of your family and friends, if you asked them, "What's the reason
-you'll go to heaven?" what would their answer be?
-I’m not sure.. or they may say they’ll go to heaven because of Jesus..
-If they answer with doing good deeds gets them to heaven then ask: “So where would they end
-up?”(Hell) Refer to good deeds analogy in Q10 if needed.
-37. And since you don't want them to go to hell, how could you help them not
-to end up there?
-Tell them about the Gospel..
-38. So let me ask you, What if God asked you this "Why should I not send you to
-hell for all the sins you've done", how would you answer?
-should be the same answer as for Q22. If it's not the same answer as Q22 you may need to refer
-to analogies again in Q10.
-39. Now, remember at the beginning of this chat, what DID you think was
-getting you to heaven?
-Doing good/asking for forgiveness etc.
-If they answer with "Because Jesus died for my sins", you may need to remind them at the start they
-weren't pointing to their actions (if they were) and ask them to remind you of why we get to heaven
-again.
-So, since you were trusting in yourself to get you to heaven, if you had died
-before this chat, where would you have ended up?
-Hell..
-If they say heaven, ask them “But what should we be trusting in as the ONLY reason we go to heaven?”
-…Jesus. “So, you weren't trusting in Jesus but in your own actions and by trusting in your own actions
-where would you have gone?”... hell
-39. But if you died right now, where will you end up?
-Heaven..
-If they still think hell, then ask them why and see what they are still trusting in to get them to heaven..
-So awesome you understand all this, if you’d like to see some more awesome
-stuff, check us out on the social media platforms: needgod.net (press Socials button)
-Do you have any other questions I can help you with?
-This has been a fantastic chat! My name is …… been great chatting with you.
-Helpful Tips
-HOW TO PRAY
-The only instruction we ae given in scripture is to pray to the Father, in the name of Jesus through the
-power of the Holy Spirit.
-LEAD TO THE TRUTH
-You can't convert or save anyone, Only God can... We can lead a person to the truth but sadly we can't
-make them believe it. If they don't believe Jesus paid for their sins, then they will be paying for them
-themselves in hell. Just keep them in prayer that God can soften their heart.
-WHO CREATED GOD
-God wasn't created, he's always been there. If you agree that time and space had a beginning, then
-something outside of time had to create it as we know that things just can't create themselves. If 
-something is outside of time, then that something has to be timeless. If something is timeless, they have
-no beginning, they have no end, they have always been there from eternal past to eternal future.
+* 如果你喺火場昏迷咗，你係完全靠消防員救你，因為你冇可能幫到佢，係咪？
+同樣道理，耶穌就係咁，我哋死喺罪入面，完全幫唔到耶穌拯救我哋免受地獄之火嘅懲罰，係耶穌做晒所有嘅事，佢為我哋嘅罪死喺十字架上。咁講有冇道理呀？
+
+### 因為我哋感激耶穌為我哋所做嘅一切，所以我哋會想為佢而活，避免犯罪。咁樣講啱唔啱呀？
+### 我哋唔係以停止犯罪或者做好事令耶穌拯救我哋，係因為佢已經拯救咗我哋，所以我哋先做好事，並且渴望過更好嘅生活。咁樣講啱唔啱呀？
+
+### 29. 你知唔知點樣了解多啲關於耶穌嘅嘢？
+《聖經》。
+
+### 30. 啱啱講得啱！咁你有冇一本《聖經》？你會唔會睇？
+如果佢哋話「冇」，你可以分享一個連結畀佢哋去攞一本《聖經》。
+
+### 31. 諗吓，如果你一個星期先食一次飯，你會唔會好有力呀？
+唔會。
+
+### 啱啦，我哋每日都需要食飯嚟保持身體健康。同樣道理，《聖經》就係我哋靈命嘅食糧。
+
+### 32. 咁如果《聖經》係我哋靈命嘅食糧，你覺得應該幾多次睇《聖經》先可以靈命強壯呢？
+每日都睇。
+
+### 34. 你有冇返教會？咩教會嚟㗎？
+有。
+* 如果佢哋答「冇」，你可以話：「教會係一個地方，可以聽到上帝嘅說話被傳講，亦可以識到其他基督徒去幫助你嘅信仰。聽起嚟好唔好呀？」
+* 你可以分享一個連結畀佢哋搵到附近嘅好教會。
+
+### 35. 佢哋有冇講同我哋頭先傾過嘅同一個訊息，點樣可以得救免罪？
+* 如果佢哋答「有」，咁就太好啦！
+* 如果佢哋答「唔係好似」，你可以問：「咁你覺得繼續去一間教錯去天堂方法嘅教會係咪一個好主意呢？」
+
+* 如果佢哋冇辦法去另一間教會，可以建議佢哋以下幾點：
+
+* 用時間祈禱同閱讀《聖經》，自己加強信仰。
+* 諗吓喺教會裡面有邊個你可以同佢分享福音，因為你都想佢哋得救。
+* 確保喺教會聽到嘅嘢同《聖經》係一致嘅。
+* 唔好向任何雕像/畫像跪拜，亦唔好向除咗上帝以外嘅人祈禱。
+* 聽下一啲網上好嘅傳道人，比如 Alistair Begg（可以喺 YouTube 搜佢嘅名）。
+### 36. 咁你諗吓你嘅家人同朋友，如果你問佢哋：「點解你會去天堂？」佢哋會答咩呢？
+唔知… 或者佢哋可能會答：「因為耶穌。」
+
+* 如果佢哋答「因為做好事」，你可以問：「咁佢哋最後會去邊？」
+地獄。 如果需要，可以參考 問題 10 嘅「做好事」比喻。
+
+### 37. 而因為你唔想佢哋去地獄，你覺得可以點樣幫佢哋呢？
+同佢哋講福音。
+
+### 38. 咁如果上帝問你：「點解我唔應該因為你嘅罪而將你送去地獄？」你會點答？
+應該係同問題 22 一樣嘅答案。
+* 如果佢哋答得唔啱，可以再參考 問題 10 嘅比喻解釋。
+
+### 39. 記唔記得喺我哋傾計嘅開頭，你覺得係咩令你可以去天堂？
+做好事/求原諒等等。
+* 如果佢哋答「因為耶穌為我嘅罪死咗」，你可以提醒佢哋一開始講嘅係唔係信靠自己嘅行為（如果佢哋係），然後問佢哋再提醒你點解我哋可以去天堂。
+
+### 咁，如果你一開始係憑自己去天堂，但喺呢次傾計之前你死咗，你會去邊？
+地獄。
+
+* 如果佢哋答「天堂」，問佢哋：「咁我哋應該信靠咩作為唯一可以去天堂嘅原因呀？」
+耶穌。
+「咁你之前係信靠自己嘅行為，而唔係信靠耶穌，咁信靠自己嘅行為會令你去邊？」
+地獄。
+
+### 39. 但如果你而家死咗，你會去邊？
+天堂。
+
+* 如果佢哋仲話「地獄」，問佢哋點解，睇吓佢哋仲信靠咩去天堂。
+
+### 太好啦，你明白晒呢啲道理啦！如果你想睇更多精彩嘅內容，可以去睇我哋嘅社交平台：needgod.net（撳「Socials」按鈕）。
+### 你仲有冇其他問題想問我可以幫到你嘅？
+### 呢次傾偈好精彩呀！我叫……，同你傾偈真係好開心！
+
+--------------------
+
+## 實用貼士
+### 點樣祈禱
+《聖經》教我哋只係向父神祈禱，奉耶穌嘅名，藉住聖靈嘅能力。
+
+### 引導人認識真理
+你無法改變或者拯救任何人，只有上帝可以… 我哋可以引導人認識真理，但可惜係我哋無法令佢哋相信。如果佢哋唔相信耶穌已經為佢哋嘅罪付咗代價，咁佢哋就要喺地獄入面為自己嘅罪負責。記住為佢哋祈禱，希望上帝可以軟化佢哋嘅心。
+
+### 邊個創造咗上帝？
+上帝冇被創造，佢一直都存在。如果你認為時間同空間有開始，咁就一定係有啲喺時間以外嘅存在創造咗佢，因為所有嘢都唔可以自己創造自己。如果有啲嘢喺時間以外，咁呢啲嘢一定係永恆嘅，無開始無終結，從永遠嘅過去到永遠嘅未來都存在。
+
 Gift Analogy:
 If someone isn’t understanding that works are required to be saved. Point out that heaven is a gift
 (Romans 6:23) and then use this example:
