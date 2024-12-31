@@ -23,9 +23,6 @@ flowchart TD
     q2 -- 因為耶穌 --> step4
 ```
 
-## 詳細步驟
-[詳細步驟](https://gist.github.com/KenHung/94a9b93ded2acff3f7eb453338e17a68#file-script-md)
-
 # 各步驟精要
 ## 了解對屬靈事物的看法
 ### 主要目的：初步了解和計劃怎傳福音，引導對方思考天堂/地獄
@@ -98,5 +95,6 @@ flowchart TD
 - 最少問一個問題測試對方對福音的理解
 
 # 參考
+- [詳細步驟](https://gist.github.com/KenHung/94a9b93ded2acff3f7eb453338e17a68#file-script-md)
 - [needgod.net Gospel Conversations Script](https://www.needgod.net/script)
 - [Common Analogies for Gospel Conversations](https://www.youtube.com/watch?v=mPTVgRuKj60)
