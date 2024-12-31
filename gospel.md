@@ -86,6 +86,9 @@ flowchart TD
 
 ### 感恩
 - 如果做好事同入天堂冇關係，咁我哋點解要做好事呢？
+- 耶穌救咗我地，我哋應該點樣做去報答佢呢？
+
+### 成長
 - 你知唔知點樣了解多啲關於耶穌嘅嘢？
 - 點解要返教會？
 
@@ -95,6 +98,5 @@ flowchart TD
 - 最少問一個問題測試對方對福音的理解
 
 # 參考
-- [詳細步驟](https://gist.github.com/KenHung/94a9b93ded2acff3f7eb453338e17a68#file-script-md)
 - [needgod.net Gospel Conversations Script](https://www.needgod.net/script)
 - [Common Analogies for Gospel Conversations](https://www.youtube.com/watch?v=mPTVgRuKj60)
