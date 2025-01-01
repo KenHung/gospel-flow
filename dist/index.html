@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>傳福音流程</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font: 400 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #111;
+      background-color: #fdfdfd;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-feature-settings: 'kern' 1;
+      -moz-font-feature-settings: 'kern' 1;
+      -o-font-feature-settings: 'kern' 1;
+      font-feature-settings: 'kern' 1;
+      font-kerning: normal;
+      padding: 30px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 5px;
+      }
+
+      main {
+        padding: 0px 20px 20px 20px !important;
+      }
+    }
+
+    main {
+      margin: 0px;
+      max-width: 900px;
+      border: 1px solid #e1e4e8;
+      padding: 10px 40px;
+      padding-bottom: 20px;
+      border-radius: 2px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    hr {
+      color: #bbb;
+      background-color: #bbb;
+      height: 1px;
+      flex: 0 1 auto;
+      margin: 1em 0;
+      padding: 0;
+      border: none;
+    }
+
+    /**
+ * Links
+ */
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #0366d6;
+    }
+
+    a:hover {
+      color: #0366d6;
+      text-decoration: underline;
+    }
+
+    pre {
+      background-color: #f6f8fa;
+      border-radius: 3px;
+      font-size: 85%;
+      line-height: 1.45;
+      overflow: auto;
+      padding: 16px;
+    }
+
+    /**
+  * Code blocks
+  */
+
+    code {
+      background-color: rgba(27, 31, 35, 0.05);
+      border-radius: 3px;
+      font-size: 85%;
+      margin: 0;
+      word-wrap: break-word;
+      padding: 0.2em 0.4em;
+      font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+        monospace;
+    }
+
+    pre>code {
+      background-color: transparent;
+      border: 0;
+      display: inline;
+      line-height: inherit;
+      margin: 0;
+      overflow: visible;
+      padding: 0;
+      word-wrap: normal;
+      font-size: 100%;
+    }
+
+    /**
+ * Blockquotes
+ */
+    blockquote {
+      margin-left: 30px;
+      margin-top: 0px;
+      margin-bottom: 16px;
+      border-left-width: 3px;
+      padding: 0 1em;
+      color: #828282;
+      border-left: 4px solid #e8e8e8;
+      padding-left: 15px;
+      font-size: 18px;
+      letter-spacing: -1px;
+      font-style: italic;
+    }
+
+    blockquote * {
+      font-style: normal !important;
+      letter-spacing: 0;
+      color: #6a737d !important;
+    }
+
+    /**
+ * Tables
+ */
+    table {
+      border-spacing: 2px;
+      display: block;
+      font-size: 14px;
+      overflow: auto;
+      width: 100%;
+      margin-bottom: 16px;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 6px 13px;
+      border: 1px solid #dfe2e5;
+    }
+
+    th {
+      font-weight: 600;
+      padding: 6px 13px;
+      border: 1px solid #dfe2e5;
+    }
+
+    tr {
+      background-color: #fff;
+      border-top: 1px solid #c6cbd1;
+    }
+
+    table tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+
+    /**
+ * Others
+ */
+
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      line-height: 24px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #24292e;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    li {
+      color: #24292e;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    li+li {
+      margin-top: 0.25em;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      color: #24292e;
+    }
+
+    a:visited {
+      color: #0366d6;
+    }
+
+    h1,
+    h2,
+    h3 {
+      border-bottom: 1px solid #eaecef;
+      color: #111;
+      /* Darker */
+    }
+  </style>
+  <style>
+    pre code.hljs {
+      display: block;
+      overflow-x: auto;
+      padding: 1em
+    }
+
+    code.hljs {
+      padding: 3px 5px
+    }
+
+    /*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+    .hljs {
+      color: #24292e;
+      background: #ffffff
+    }
+
+    .hljs-doctag,
+    .hljs-keyword,
+    .hljs-meta .hljs-keyword,
+    .hljs-template-tag,
+    .hljs-template-variable,
+    .hljs-type,
+    .hljs-variable.language_ {
+      /* prettylights-syntax-keyword */
+      color: #d73a49
+    }
+
+    .hljs-title,
+    .hljs-title.class_,
+    .hljs-title.class_.inherited__,
+    .hljs-title.function_ {
+      /* prettylights-syntax-entity */
+      color: #6f42c1
+    }
+
+    .hljs-attr,
+    .hljs-attribute,
+    .hljs-literal,
+    .hljs-meta,
+    .hljs-number,
+    .hljs-operator,
+    .hljs-variable,
+    .hljs-selector-attr,
+    .hljs-selector-class,
+    .hljs-selector-id {
+      /* prettylights-syntax-constant */
+      color: #005cc5
+    }
+
+    .hljs-regexp,
+    .hljs-string,
+    .hljs-meta .hljs-string {
+      /* prettylights-syntax-string */
+      color: #032f62
+    }
+
+    .hljs-built_in,
+    .hljs-symbol {
+      /* prettylights-syntax-variable */
+      color: #e36209
+    }
+
+    .hljs-comment,
+    .hljs-code,
+    .hljs-formula {
+      /* prettylights-syntax-comment */
+      color: #6a737d
+    }
+
+    .hljs-name,
+    .hljs-quote,
+    .hljs-selector-tag,
+    .hljs-selector-pseudo {
+      /* prettylights-syntax-entity-tag */
+      color: #22863a
+    }
+
+    .hljs-subst {
+      /* prettylights-syntax-storage-modifier-import */
+      color: #24292e
+    }
+
+    .hljs-section {
+      /* prettylights-syntax-markup-heading */
+      color: #005cc5;
+      font-weight: bold
+    }
+
+    .hljs-bullet {
+      /* prettylights-syntax-markup-list */
+      color: #735c0f
+    }
+
+    .hljs-emphasis {
+      /* prettylights-syntax-markup-italic */
+      color: #24292e;
+      font-style: italic
+    }
+
+    .hljs-strong {
+      /* prettylights-syntax-markup-bold */
+      color: #24292e;
+      font-weight: bold
+    }
+
+    .hljs-addition {
+      /* prettylights-syntax-markup-inserted */
+      color: #22863a;
+      background-color: #f0fff4
+    }
+
+    .hljs-deletion {
+      /* prettylights-syntax-markup-deleted */
+      color: #b31d28;
+      background-color: #ffeef0
+    }
+
+    .hljs-char.escape_,
+    .hljs-link,
+    .hljs-params,
+    .hljs-property,
+    .hljs-punctuation,
+    .hljs-tag {
+      /* purposely ignored */
+
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 id="傳福音流程">傳福音流程</h1>
+    <h2 id="flow-chart">Flow Chart</h2>
+    <p><img src="./output-1.svg" alt="diagram" style="max-height: 800px;" /></p>
+    <h1 id="各步驟精要">各步驟精要</h1>
+    <h2 id="了解對屬靈事物的看法">了解對屬靈事物的看法</h2>
+    <h3 id="主要目的：初步了解和計劃怎傳福音，引導對方思考天堂地獄">主要目的：初步了解和計劃怎傳福音，引導對方思考天堂/地獄</h3>
+    <p>✅你覺得人死咗之後會點？ <br />
+      ✅你信唔信有天堂/地獄？（如果唔想提「死」字） <br />
+      ✅你信唔信有神？ <br />
+      ❌挪亞方舟（太間接，和天堂/地獄關係較少） </p>
+    <h2 id="好人測試">好人測試</h2>
+    <h3 id="中心信息：人都有罪，應該落地獄作為懲罰">中心信息：人都有罪，應該落地獄作為懲罰</h3>
+    <ol>
+      <li>你覺得自己係咪一個好人？</li>
+      <li>你有冇講過大話/粗口/發脾氣/用言語傷害人？</li>
+      <li>如果神根據呢啲嘢審判你，你覺得會有罪定無罪？<ul>
+          <li>會得到獎賞定係懲罰？</li>
+          <li>似係天堂定地獄？</li>
+        </ul>
+      </li>
+    </ol>
+    <h3 id="反對一：我冇殺人我嘅罪冇咁嚴重到落地獄">反對一：我冇殺人/我嘅罪冇咁嚴重到落地獄</h3>
+    <ul>
+      <li>亂拋垃圾就會被罰，無論你有冇犯其他罪；得罪神也是如此</li>
+    </ul>
+    <h3 id="反對二：人人都有犯罪">反對二：人人都有犯罪</h3>
+    <ul>
+      <li>就算人人亂拋垃圾，唔代表你可以免罪</li>
+    </ul>
+    <h3 id="反對三：我做好事多過壞事">反對三：我做好事多過壞事</h3>
+    <ul>
+      <li>如果你捐款做慈善，能否免去亂拋垃圾的罰款？</li>
+    </ul>
+    <h3 id="反對四：我唔覺得自己有錯">反對四：我唔覺得自己有錯</h3>
+    <ul>
+      <li>在別人的家中需要遵循規則，否則就得罪別人；創造宇宙的神也有權設定祂的規則，不遵守祂的規則就是得罪神</li>
+    </ul>
+    <h2 id="福音">福音</h2>
+    <h3 id="中心信息：耶穌替我哋承擔罪嘅刑罰，只需要我哋相信">中心信息：耶穌替我哋承擔罪嘅刑罰，只需要我哋相信</h3>
+    <ol>
+      <li>點先唔使落地獄？<ul>
+          <li>如同罰單需要有人來支付，地獄的刑罰要麼我們承受，要麼別人替我們承受</li>
+          <li>所以耶穌嚟到世界，死喺十字架上，為我哋承擔罪嘅懲罰，三日之後從死裡復活</li>
+          <li>佢唯一嘅要求，就係要我哋全心相信佢為我哋嘅罪死喺十字架上</li>
+        </ul>
+      </li>
+      <li>如果耶穌替你承擔咗刑罰，你死後會去邊？</li>
+      <li>如果你唔想落地獄，應該幾時信耶穌替你承擔你嘅罪？</li>
+    </ol>
+    <h3 id="反對一：上天堂需要做好行為懺悔悔改">反對一：上天堂需要做好行為/懺悔/悔改</h3>
+    <ul>
+      <li>犯罪後做好行為/懺悔/悔改，法官不會因此判人無罪；神也不會因為人的行為免去人的刑罰</li>
+    </ul>
+    <h3 id="反對二：祈求原諒可以免去地獄">反對二：祈求原諒可以免去地獄</h3>
+    <ul>
+      <li>犯罪後向法官尋求原諒也不能免罪，神也不會因為人求原諒而免罰</li>
+    </ul>
+    <h3 id="反對三：想自己承擔刑罰">反對三：想自己承擔刑罰</h3>
+    <ul>
+      <li>如果你亂過馬路而被車撞，你不會拒絕救護車的幫助；同樣，你也不應拒絕耶穌的幫助</li>
+    </ul>
+    <h3 id="誤解一：不明白恩典">誤解一：不明白恩典</h3>
+    <ul>
+      <li>如果你我買外賣，得到$20，這叫報酬，不是恩典；神的救恩係白白的，不需要我們做事</li>
+    </ul>
+    <h2 id="測試對福音的理解">測試對福音的理解</h2>
+    <h3 id="清楚得救">清楚得救</h3>
+    <ul>
+      <li>如果你企喺神嘅面前，神問你：點解我要俾你入天堂，你會點答？</li>
+      <li>如果100分滿分，你有幾肯定你可以上天堂？</li>
+    </ul>
+    <h3 id="因信稱義">因信稱義</h3>
+    <ul>
+      <li>如果你信耶穌之後，聽日犯咗五樣罪，然後死咗，咁最後會去邊？</li>
+      <li>假設有個朋友同你講佢會去天堂，因為佢覺得自己係個好人。咁你覺得佢死咗會去邊？</li>
+      <li>但如果另一個朋友同你講：「我會去天堂，因為有兩個原因。第一，因為耶穌為我嘅罪死；第二，因為我係個好人。」咁你覺得佢會去天堂定地獄？</li>
+      <li>做好事可唔可以令你上天堂？</li>
+    </ul>
+    <h3 id="感恩">感恩</h3>
+    <ul>
+      <li>如果做好事同入天堂冇關係，咁我哋點解要做好事呢？</li>
+      <li>耶穌救咗我地，我哋應該點樣做去報答佢呢？</li>
+    </ul>
+    <h3 id="成長">成長</h3>
+    <ul>
+      <li>你知唔知點樣了解多啲關於耶穌嘅嘢？</li>
+      <li>點解要返教會？</li>
+    </ul>
+    <h1 id="tips">Tips</h1>
+    <ul>
+      <li>不要只是單方面講，對方不明白福音，就無法相信</li>
+      <li>盡量不要使用基督徒術語：得救、火湖、救恩、悔改、信靠主、任何聖經人物、任何聖經書卷⋯⋯</li>
+      <li>最少問一個問題測試對方對福音的理解</li>
+    </ul>
+    <h1 id="參考">參考</h1>
+    <ul>
+      <li><a href="https://www.needgod.net/script">needgod.net Gospel Conversations Script</a></li>
+      <li><a href="https://www.youtube.com/watch?v=mPTVgRuKj60">Common Analogies for Gospel Conversations</a></li>
+    </ul>
+  </main>
+</body>
+
+</html>
