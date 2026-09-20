@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>回想 — 閃卡</title>
+  <meta name="description" content="一個用於複習選擇題和開放題的專注閃卡應用。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main id="app" class="container" v-cloak>
+
+    <!-- Loading / error while fetching the manifest -->
+    <section v-if="loading" class="state">
+      <p class="muted">載入中…</p>
+    </section>
+
+    <section v-else-if="error" class="state">
+      <p class="error-text">{{ error }}</p>
+      <button class="outline" @click="loadManifest">重試</button>
+    </section>
+
+    <!-- ============ PICKER ============ -->
+    <section v-else-if="screen === 'picker'" class="picker">
+      <header class="masthead">
+        <h1 class="wordmark">回想</h1>
+        <p class="tagline">選擇牌組</p>
+      </header>
+
+      <fieldset class="deck-list">
+        <label v-for="deck in manifest" :key="deck.id" class="deck-row"
+          :class="{ 'is-selected': selectedDeckIds.includes(deck.id) }">
+          <input type="checkbox" :value="deck.id" v-model="selectedDeckIds" />
+          <span class="deck-name">{{ deck.name }}</span>
+        </label>
+      </fieldset>
+
+      <label class="shuffle-row">
+        <input type="checkbox" role="switch" v-model="shuffle" />
+        打亂順序
+      </label>
+
+      <button class="start-btn" :disabled="selectedDeckIds.length === 0 || starting" :aria-busy="starting"
+        @click="start">
+        {{ startLabel }}
+      </button>
+    </section>
+
+    <!-- ============ CARD ============ -->
+    <section v-else-if="screen === 'card'" class="study">
+      <button class="home-btn outline" @click="restart" aria-label="返回牌組">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 10.5 12 3l9 7.5" />
+          <path d="M5 9.5V21h14V9.5" />
+        </svg>
+        首頁
+      </button>
+
+      <div class="progress" role="group" aria-label="進度">
+        <span class="deck-badge">{{ current.deckName }}</span>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" :style="{ width: progressPercent + '%' }"></div>
+        </div>
+        <span class="counter">{{ index + 1 }} / {{ cards.length }}</span>
+      </div>
+
+      <!-- MULTIPLE CHOICE: answered inline, no flip -->
+      <article v-if="current.type === 'mc'" class="card mc-card" :key="index">
+        <div class="face-body">
+          <h2 class="question">{{ current.question }}</h2>
+
+          <ul class="options">
+            <li v-for="(opt, i) in current.options" :key="i">
+              <button class="option" :class="optionClass(i)" :disabled="chosen !== null" @click="selectOption(i)">
+                <span class="option-mark" aria-hidden="true">{{ optionMark(i) }}</span>
+                <span class="option-text">{{ opt }}</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <p v-if="chosen !== null && current.explanation" class="explanation">{{ current.explanation }}</p>
+        <p v-else-if="chosen === null" class="face-hint">請選擇答案</p>
+      </article>
+
+      <!-- OPEN-ENDED: flip to reveal -->
+      <div v-else class="flip" :class="{ 'is-flipped': flipped }" :key="index">
+        <div class="flip-inner">
+
+          <article class="card flip-front" @click="onCardClick">
+            <div class="face-body">
+              <h2 class="question">{{ current.question }}</h2>
+            </div>
+            <p class="face-hint">查看答案</p>
+          </article>
+
+          <article class="card flip-back" @click="onCardClick">
+            <div class="face-body">
+              <p class="answer">{{ backAnswer }}</p>
+              <p v-if="current.explanation" class="explanation">{{ current.explanation }}</p>
+            </div>
+            <p class="face-hint">點擊翻回</p>
+          </article>
+
+        </div>
+      </div>
+
+      <nav class="controls">
+        <button class="outline" :disabled="index === 0" @click="prev">上一個</button>
+        <button v-if="current.type === 'open'" class="outline" @click="flip">{{ flipped ? '問題' : '翻轉' }}</button>
+        <button @click="next">{{ index + 1 === cards.length ? '完成' : '下一個' }}</button>
+      </nav>
+    </section>
+
+    <!-- ============ DONE ============ -->
+    <section v-else-if="screen === 'done'" class="done">
+      <h2 class="done-title">這是最後一張卡片。</h2>
+      <p class="muted">你已完成 {{ cards.length }} 張卡片。</p>
+      <div class="done-actions">
+        <button @click="restartSame">再複習一遍</button>
+        <button class="outline" @click="restart">選擇牌組</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

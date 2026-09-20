@@ -1,0 +1,90 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Flashcard Deck",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "name",
+        "cards"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "minLength": 1
+        },
+        "cards": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/card"
+            }
+        }
+    },
+    "$defs": {
+        "card": {
+            "oneOf": [
+                {
+                    "title": "Multiple-choice card",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "type",
+                        "question",
+                        "options",
+                        "answer"
+                    ],
+                    "properties": {
+                        "type": {
+                            "const": "mc"
+                        },
+                        "question": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "options": {
+                            "type": "array",
+                            "minItems": 2,
+                            "items": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "uniqueItems": true
+                        },
+                        "answer": {
+                            "type": "integer",
+                            "minimum": 0
+                        },
+                        "explanation": {
+                            "type": "string"
+                        }
+                    }
+                },
+                {
+                    "title": "Open-ended card",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "type",
+                        "question",
+                        "answer"
+                    ],
+                    "properties": {
+                        "type": {
+                            "const": "open"
+                        },
+                        "question": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "answer": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "explanation": {
+                            "type": "string"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

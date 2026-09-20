@@ -1,0 +1,529 @@
+/* =========================================================
+   Recall — flashcard app
+   Base: Pico CSS. This file retheme's Pico and adds the
+   study-desk look: sage paper, pine-green ink, and a
+   highlighter-yellow reveal as the one signature moment.
+   ========================================================= */
+
+:root {
+  --bg: #e4e9e1;
+  --card: #fcfcfa;
+  --ink: #16211c;
+  --muted: #5c6b62;
+  --line: rgba(22, 33, 28, 0.12);
+  --accent: #1f5f55;
+  --accent-strong: #164a42;
+  --accent-ink: #fcfcfa;
+  --highlight: #f5c84b;
+  --correct: #2e7d53;
+  --correct-bg: #dcefe2;
+  --wrong: #b5443a;
+  --wrong-bg: #f6e1de;
+  --radius-card: 18px;
+  --radius-ctl: 11px;
+  --shadow-card: 0 1px 2px rgba(22, 33, 28, 0.06), 0 18px 40px -24px rgba(22, 33, 28, 0.35);
+
+  /* Retheme Pico */
+  --pico-font-family: "Public Sans", system-ui, sans-serif;
+  --pico-background-color: var(--bg);
+  --pico-color: var(--ink);
+  --pico-primary: var(--accent);
+  --pico-primary-background: var(--accent);
+  --pico-primary-hover-background: var(--accent-strong);
+  --pico-primary-focus: rgba(31, 95, 85, 0.35);
+  --pico-border-radius: var(--radius-ctl);
+  --pico-spacing: 1rem;
+}
+
+[data-theme="dark"] {
+  --bg: #131a17;
+  --card: #1c2621;
+  --ink: #ebefe9;
+  --muted: #93a399;
+  --line: rgba(235, 239, 233, 0.14);
+  --accent: #57b79e;
+  --accent-strong: #6cc7af;
+  --accent-ink: #0e1613;
+  --highlight: #ecc352;
+  --correct: #7ac795;
+  --correct-bg: #22362b;
+  --wrong: #e08279;
+  --wrong-bg: #3a2523;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 44px -26px rgba(0, 0, 0, 0.7);
+}
+
+[v-cloak] {
+  display: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: "Public Sans", system-ui, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app.container {
+  max-width: 44rem;
+  padding-block: clamp(1.75rem, 5vw, 4rem);
+  padding-inline: clamp(1.5rem, 5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.error-text {
+  color: var(--wrong);
+  font-weight: 600;
+}
+
+.state {
+  text-align: center;
+  padding-block: 3rem;
+}
+
+/* ---------- Buttons (shared) ---------- */
+button {
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: var(--radius-ctl);
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+button:not(.outline):not(.option) {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+button:not(.outline):not(.option):hover:not(:disabled) {
+  background-color: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
+
+button.outline {
+  color: var(--accent);
+  border-color: var(--line);
+  background: transparent;
+}
+
+button.outline:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: transparent;
+}
+
+/* ========================================================
+   PICKER
+   ======================================================== */
+.masthead {
+  margin-bottom: 0.5rem;
+}
+
+.wordmark {
+  font-family: "Fraunces", Georgia, serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: clamp(2.6rem, 8vw, 3.9rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.4rem;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 0;
+  max-width: 34ch;
+}
+
+.deck-list {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.deck-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 1.15rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  cursor: pointer;
+  margin: 0;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.deck-row:hover {
+  border-color: var(--accent);
+}
+
+.deck-row.is-selected {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.deck-row input[type="checkbox"] {
+  margin: 0;
+  flex: none;
+}
+
+.deck-name {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.shuffle-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--muted);
+  margin: 1rem 0 1.5rem;
+  cursor: pointer;
+}
+
+.start-btn {
+  width: 100%;
+  padding-block: 0.9rem;
+  font-size: 1.05rem;
+}
+
+/* ========================================================
+   STUDY (card)
+   ======================================================== */
+.study {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home-btn {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: auto;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  margin-bottom: -0.25rem;
+  /* tighten against the progress row */
+}
+
+.home-btn svg {
+  flex: none;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.deck-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.progress-track {
+  flex: 1;
+  height: 5px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}
+
+.counter {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* ---- 3D flip (front = prompt, back = answer) ---- */
+.flip,
+.mc-card {
+  width: 100%;
+  max-width: 30rem;
+  /* a contained, centered card... */
+  align-self: center;
+  /* ...while the controls below stay full width */
+}
+
+.flip {
+  perspective: 1600px;
+}
+
+.flip-inner {
+  display: grid;
+  /* stack faces in one cell so height fits the taller face */
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flip.is-flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  border-color: var(--accent);
+  pointer-events: none;
+  /* only the visible face is interactive */
+}
+
+.flip.is-flipped .flip-front {
+  pointer-events: none;
+}
+
+.flip.is-flipped .flip-back {
+  pointer-events: auto;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 20rem;
+  /* generous, so short cards still feel like cards */
+}
+
+/* Middle zone of each face: the prompt/answer, vertically centered
+   between the top label and the bottom hint (space-between rhythm). */
+.face-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.15rem;
+  padding-block: 0.5rem;
+}
+
+.card-type {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+}
+
+.question {
+  font-family: "Fraunces", Georgia, serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 4.5vw, 2.05rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* ---- Multiple choice ---- */
+.options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.options li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options li::marker {
+  content: "";
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-align: left;
+  padding: 0.9rem 1rem;
+  background: transparent;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-ctl);
+  color: var(--ink);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.option:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.option-mark {
+  flex: none;
+  width: 1.85rem;
+  height: 1.85rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.option.correct {
+  border-color: var(--correct);
+  background: var(--correct-bg);
+  color: var(--ink);
+}
+
+.option.correct .option-mark {
+  background: var(--correct);
+  color: #fff;
+}
+
+.option.wrong {
+  border-color: var(--wrong);
+  background: var(--wrong-bg);
+}
+
+.option.wrong .option-mark {
+  background: var(--wrong);
+  color: #fff;
+}
+
+.option.dim {
+  opacity: 0.55;
+}
+
+/* ---- Answer face ---- */
+.answer {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* Guidance pinned to the bottom of each face. */
+.face-hint {
+  margin: 1.5rem 0 0;
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.options+.face-hint {
+  border-top: 1px solid var(--line);
+}
+
+.explanation {
+  margin: 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+/* ---- Controls ---- */
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  /* extra breathing room below the card */
+}
+
+.controls button {
+  flex: 1;
+  padding-block: 0.8rem;
+}
+
+/* ========================================================
+   DONE
+   ======================================================== */
+.done {
+  text-align: center;
+  padding-block: 2.5rem;
+}
+
+.done-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  margin: 0 0 0.5rem;
+}
+
+.done-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+}
+
+/* ========================================================
+   Motion & responsive
+   ======================================================== */
+@media (prefers-reduced-motion: reduce) {
+  .progress-fill {
+    transition: none;
+  }
+
+  .flip-inner {
+    transition: none;
+  }
+
+  * {
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 30rem) {
+
+  .controls,
+  .done-actions {
+    flex-direction: column;
+  }
+}
