@@ -1,0 +1,9 @@
+{
+  "decks": [
+    {
+      "id": "gospel",
+      "name": "Gospel Conversations",
+      "file": "./decks/gospel.json"
+    }
+  ]
+}

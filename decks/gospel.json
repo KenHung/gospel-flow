@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "category": "Creation & God (Q2)",
+        "question": "The person says 'No' to believing in God.",
+        "answer": "Ask: 'Would you agree that the building I'm sitting in had a builder, or did it just appear by itself? This building is evidence of a builder. In the same way, when we look at the universe, it had a beginning and needed a creator. Creation needs a creator, agree?'",
+        "anchor_analogy": "Building and Builder"
+    },
+    {
+        "id": 2,
+        "category": "Self-Righteousness (Q4-Q6)",
+        "question": "The person insists they have never lied, used bad language, or been disrespected/angry.",
+        "answer": "Ask if they have ever sinned against God. If they still say no, cite Romans 3:23 ('All have sinned...'). If they still say no, explain that denying their sin is committing the sin of pride.",
+        "anchor_analogy": "Sin of Pride / Romans 3:23"
+    },
+    {
+        "id": 3,
+        "category": "Guilt vs. Innocence (Q7)",
+        "question": "The person says they would be 'Innocent' before God.",
+        "answer": "Clarify the definitions: 'Innocent means you've never done anything wrong your whole life. Guilty means you've done at least one bad thing—so which one would you be?'",
+        "anchor_analogy": "Definition of Innocence"
+    },
+    {
+        "id": 4,
+        "category": "Forgiveness Attempt (Q7/Q10)",
+        "question": "The person claims they will avoid punishment because 'I ask God for forgiveness' or 'God is forgiving'.",
+        "answer": "Use the Courtroom Analogy: 'If you commit 5 serious crimes and stand before a human judge asking for forgiveness, can the judge just let you go free without paying the penalty? Asking for forgiveness doesn't erase the law you broke or pay your fine.'",
+        "anchor_analogy": "Human Judge & Courtroom"
+    },
+    {
+        "id": 5,
+        "category": "Good Works / Repentance (Q10)",
+        "question": "The person says doing good deeds or stopping bad habits will make up for their sin.",
+        "answer": "Use the Crime Analogy: 'If you commit 5 serious crimes today, and tomorrow you commit no crimes and do 10 good deeds, will the police ignore yesterday's crimes? Stopping sin and doing good doesn't take away past crimes.'",
+        "anchor_analogy": "5 Crimes & 10 Good Deeds"
+    },
+    {
+        "id": 6,
+        "category": "Reward or Punishment (Q8)",
+        "question": "The person says a guilty person deserves a 'Reward' from God.",
+        "answer": "Ask: 'Would a police officer give me a bunch of flowers for speeding, or a penalty notice? What country gives flowers for speeding?'",
+        "anchor_analogy": "Flowers for Speeding"
+    },
+    {
+        "id": 7,
+        "category": "Substitutionary Atonement (Q11)",
+        "question": "The person struggles to understand '100% of punishment taken away' (Q11).",
+        "answer": "Use the Finger Analogy or Speeding Fine Analogy: 'If someone chops off all of your fingers, how many do you have left?' or 'If you have a $1,000 fine and someone pays all $1,000 as a gift, how much is left for you to pay?' (Zero).",
+        "anchor_analogy": "100% Paid Fine / Finger Analogy"
+    },
+    {
+        "id": 8,
+        "category": "Future Sins (Q17)",
+        "question": "The person thinks sinning tomorrow after trusting Jesus will send them to Hell.",
+        "answer": "Ask: 'What gets you to Heaven again? (Jesus). Did Jesus pay for just your past sins, or also your future sins?' If they say past only: 'If Jesus died for 100% of your sins, that has to include your future sins too, right?'",
+        "anchor_analogy": "100% Includes Future Sins"
+    },
+    {
+        "id": 9,
+        "category": "First-Person 'I' Trap (Q21)",
+        "question": "When asked why God should let them into Heaven, the person starts with 'Because I accepted...' or 'Because I believed...'",
+        "answer": "Explain: 'If your answer starts with \"I\", you are pointing to what WE have done for God rather than what HE has done for us. Our answer should start in the third person: \"Because Jesus paid for my sins.\"'",
+        "anchor_analogy": "First Person ('I') vs Third Person ('Jesus')"
+    },
+    {
+        "id": 10,
+        "category": "Split Trust / Partial Works (Q23)",
+        "question": "A person says they are going to Heaven '50% because of Jesus and 50% because I am a good person.'",
+        "answer": "Explain: 'By trusting in two things, they aren't trusting 100% in Jesus. If Jesus only contributes 50%, where do they end up? (Hell). We must trust that Jesus is the ONLY reason we are saved, not our actions.'",
+        "anchor_analogy": "50/50 Split Trust"
+    },
+    {
+        "id": 11,
+        "category": "Why Do Good Things? (Q28)",
+        "question": "The person asks why we should do good deeds if they don't get us to Heaven.",
+        "answer": "Use the Fireman Analogy: 'If a fireman risks his life to pull you out of a burning building while you're unconscious, would you want to punch him or thank him? We do good things out of gratitude because He saved us, not to save ourselves.'",
+        "anchor_analogy": "Rescued from Burning Building"
+    },
+    {
+        "id": 12,
+        "category": "When to Trust? (Q20)",
+        "question": "The person says they will start trusting Jesus 'Before I die' or 'Later in life'.",
+        "answer": "Ask: 'Do you know the exact day or time you will die? If not, when should you start trusting that Jesus paid for your sins?' (Now).",
+        "anchor_analogy": "Uncertainty of Death"
+    }
+]

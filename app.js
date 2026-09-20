@@ -76,7 +76,12 @@ createApp({
             const res = await fetch(deck.file);
             if (!res.ok) throw new Error(`"${deck.name}" failed to load (${res.status}).`);
             const data = await res.json();
-            return (data.cards || []).map((card) => ({ ...card, deckName: data.name || deck.name }));
+            const cards = Array.isArray(data) ? data : (data.cards || []);
+            return cards.map((card) => ({
+              ...card,
+              type: card.type || "open",
+              deckName: data.name || deck.name,
+            }));
           })
         );
 
