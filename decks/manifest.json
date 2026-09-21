@@ -1,6 +1,11 @@
 {
   "decks": [
     {
+      "id": "gospel_zh",
+      "name": "福音流程情境",
+      "file": "./decks/gospel_zh.json"
+    },
+    {
       "id": "gospel",
       "name": "Gospel Flow Scenarios",
       "file": "./decks/gospel.json"
