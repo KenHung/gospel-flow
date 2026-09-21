@@ -348,6 +348,7 @@ button.outline:hover:not(:disabled) {
   line-height: 1.2;
   letter-spacing: -0.01em;
   margin: 0;
+  white-space: pre-line;
   text-wrap: balance;
 }
 
@@ -409,6 +410,7 @@ button.outline:hover:not(:disabled) {
 
 .option-text {
   flex: 1;
+  white-space: pre-line;
 }
 
 .option.correct {
@@ -443,6 +445,7 @@ button.outline:hover:not(:disabled) {
   margin: 0;
   color: var(--ink);
   font-weight: 500;
+  white-space: pre-line;
 }
 
 /* Guidance pinned to the bottom of each face. */
@@ -465,6 +468,7 @@ button.outline:hover:not(:disabled) {
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.55;
+  white-space: pre-line;
 }
 
 /* ---- Controls ---- */
