@@ -80,15 +80,15 @@ If they answer ask for forgiveness/prayer, “Imagine you break a serious law in
 
 If they say Repent, ask them what they mean by repent. If they say: “Ask for forgiveness”, refer to the analogy above. Many people will think it means ask for forgiveness, so you need to explain that repentance means changing your mind from trusting yourself to trusting in Christ. Asking for forgiveness and turning from sin are the “result” of repentance.
 
-- 11. What we need is someone else who would take the punishment for us. If someone took 100% of your Hell punishment, how much would be left for you to take?
+## 11. What we need is someone else who would take the punishment for us. If someone took 100% of your Hell punishment, how much would be left for you to take?
 
 Nothing..
 
 If they still struggle with saying nothing or zero, ask: "If someone chops off all of your fingers, do you have any left?" ..then repeat the question
 
-- 12. So if you have no more Hell punishment, where will you go when you die? Heaven..
+## 12. So if you have no more Hell punishment, where will you go when you die? Heaven..
 
-- If they still say Hell, ask them again how our Hell punishment is paid for. (By having someone take it for us)
+If they still say Hell, ask them again how our Hell punishment is paid for. (By having someone take it for us)
 
 If they are struggling to understand this concept, use the example of the speeding fine analogy. “Think of it like this: If you had a \$1000 speeding fine and someone pays all \$1000 for you as a gift. How much is left for you to pay?“(zero)
 
@@ -111,7 +111,7 @@ Because Jesus paid for my sins..
 If they still think because of their actions, go back to Question 10
 
 
-- 16. Now he offers this to us as a free gift and all I have to do to receive this free gift is to simply trust that Jesus died on the cross paying for 100% of our Hell punishment.
+## 16. Now he offers this to us as a free gift and all I have to do to receive this free gift is to simply trust that Jesus died on the cross paying for 100% of our Hell punishment.
 
 ## 17. So if you trust that Jesus has paid for all of your sins now and tomorrow you sin 5 more times and then die, would you go to Heaven or Hell?
 
@@ -135,13 +135,13 @@ If they again think because of good works or asking for forgiveness, go back to 
 
 Good answer, you’d still get to Heaven as Jesus has paid for your past, present, and future sins.
 
-- 19. But if you don’t trust Jesus paid for your sins, where would you end up? Hell..
+## 19. But if you don’t trust Jesus paid for your sins, where would you end up? Hell..
 
 If they say heaven, say: “If I offered you a gift today, but you didn’t accept it from me, have you actually received that gift?” No.
 
 “In the same way, Jesus is offering to pay for our sins as a gift but if we don’t accept it, we won’t receive it and so where would we end up?”
 
-- 20. ..and since you don’t want to go to Hell, WHEN should you start trusting that Jesus has paid for your sins?
+## 20. ..and since you don’t want to go to Hell, WHEN should you start trusting that Jesus has paid for your sins?
 
 Now..
 
@@ -166,7 +166,7 @@ If they want a bible verse to support this, use: Matthew 7:22-23 - On that day m
 
 lawlessness.’
 
-- 22. Now, imagine a friend of yours says they are going to heaven because they are a good person, where would they go when they die?
+## 22. Now, imagine a friend of yours says they are going to heaven because they are a good person, where would they go when they die?
 
 Hell.
 
@@ -177,7 +177,7 @@ If they say Heaven, ask them “what's the reason why God would let someone into
 ## That's right, and why?
 
 
-23. But another friend comes to you and says "I'm going to heaven because of two reasons. The first reason is because Jesus died for my sins and the second reason is because I've been a good person." Would that person go to Heaven or Hell?
+## 23. But another friend comes to you and says "I'm going to heaven because of two reasons. The first reason is because Jesus died for my sins and the second reason is because I've been a good person." Would that person go to Heaven or Hell?
 
 Hell..
 
@@ -189,7 +189,7 @@ Jesus to save them. Makes sense?
 
 Yes..
 
-24. So, on a scale of 0-100%, how sure are you that you will go to Heaven when
+## 24. So, on a scale of 0-100%, how sure are you that you will go to Heaven when
 
 you die?
 
@@ -232,25 +232,25 @@ We don't stop our sins and do good things for Jesus to save us, we do good thing
 
 Yes..
 
-29. Do you know how you can find out more about Jesus?
+## 29. Do you know how you can find out more about Jesus?
 
 The Bible
 
-30. Yep! Do you have a bible and do you read it much?
+## 30. Yep! Do you have a bible and do you read it much?
 
 If they say No, you can share a link with them to get one.
 
-31. Think of it like this, If you ate food only once a week, would you be very strong?
+## 31. Think of it like this, If you ate food only once a week, would you be very strong?
 
 no..
 
 Right. We eat food everyday to stay strong physically. Our bible is like our spiritual food.
 
-32. So if the bible is our spiritual food, how often do you think you should read the bible then to be strong spiritually?
+## 32. So if the bible is our spiritual food, how often do you think you should read the bible then to be strong spiritually?
 
 Everyday..
 
-34. Do you go to church?... what kind of church is it?
+## 34. Do you go to church?... what kind of church is it?
 
 Yes..
 
@@ -265,15 +265,15 @@ If they answer yes, then that’s great. If they answer not really. Ask “So do
 
 Ask if they are able to get to another church on their own but if they can’t, Suggest the following:
 
-- \- Spend time in personal prayer and reading the Bible to strengthen your faith on your own.
+- Spend time in personal prayer and reading the Bible to strengthen your faith on your own.
 
-- \- Think about who you could share the gospel with at your church, because you want them to be saved.
+- Think about who you could share the gospel with at your church, because you want them to be saved.
 
-- \- Make sure to check anything you are hearing at church, with the Bible.
+- Make sure to check anything you are hearing at church, with the Bible.
 
-- \- Don't bow down to any statues/pictures, or praying to anyone other than God.
+- Don't bow down to any statues/pictures, or praying to anyone other than God.
 
-- \- Listen in to some good preachers online, such as Alistair Begg (search his name on YouTube).
+- Listen in to some good preachers online, such as Alistair Begg (search his name on YouTube).
 
 ## 36. Also, think of your family and friends, if you asked them, "What's the reason you'll go to heaven?" what would their answer be?
 
