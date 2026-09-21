@@ -1,0 +1,160 @@
+{
+    "name": "Complete Script Scenarios Responses",
+    "cards": [
+        {
+            "type": "open",
+            "question": "How should you respond if someone says they do not believe there is a God?",
+            "answer": "Ask if they agree that a building needed a builder rather than appearing by itself. Then explain that just as a building needs a builder, the universe had a beginning and therefore needed a creator."
+        },
+        {
+            "type": "open",
+            "question": "What should you say if someone claims they would be 'innocent' when judged by God?",
+            "answer": "Give them the definition: 'Innocent means you've never done anything wrong your whole life, and guilty means you've done at least one bad thing - so which one would you be?'"
+        },
+        {
+            "type": "open",
+            "question": "How do you respond if someone says they deserve a 'reward' for their actions instead of punishment?",
+            "answer": "Ask them, 'Would a policeman give me a bunch of flowers for speeding OR a penalty notice?' If they still say reward, ask what country would give flowers for speeding."
+        },
+        {
+            "type": "open",
+            "question": "How should you reply if a person thinks doing good things will help them avoid their Hell punishment?",
+            "answer": "Use the crimes analogy: Imagine doing 5 serious crimes today and 10 good things tomorrow; the police wouldn't ignore the crimes. Stopping sin and doing good doesn't take away the sins we have done."
+        },
+        {
+            "type": "open",
+            "question": "What is the appropriate response if someone thinks they can avoid Hell by simply asking for forgiveness?",
+            "answer": "Ask if a judge would let someone go free for a serious crime just because they ask for forgiveness. Explain that asking for forgiveness doesn't take away the punishment for breaking God's laws or pay our hell fine."
+        },
+        {
+            "type": "open",
+            "question": "If someone thinks 'repent' just means asking for forgiveness, how should you clarify it?",
+            "answer": "Explain that repentance means changing your mind from trusting yourself to trusting in Christ, and that asking for forgiveness and turning from sin are merely the 'result' of repentance."
+        },
+        {
+            "type": "open",
+            "question": "If someone struggles to understand that zero punishment is left if Jesus pays it all, what analogy can you use?",
+            "answer": "Use the speeding fine analogy: 'If you had a $1000 speeding fine and someone pays all $1000 for you as a gift. How much is left for you to pay?'"
+        },
+        {
+            "type": "open",
+            "question": "How do you correct someone if they answer 'Why should God let you into Heaven?' with a statement starting with 'I' (e.g., 'I accept')?",
+            "answer": "Explain that answering in the first person 'I' points to what WE have done rather than what Jesus has done. Ask them to re-word their answer to start in the third person, like 'Because Jesus...'."
+        },
+        {
+            "type": "open",
+            "question": "How should you respond to someone who believes they are going to heaven because Jesus died for their sins AND they have been a good person?",
+            "answer": "Explain that by trusting in two things, it becomes 50% Jesus and 50% their actions. If they are trusting partly in themselves and not ONLY in Jesus, they would end up in Hell."
+        },
+        {
+            "type": "open",
+            "question": "How should you respond if someone answers \"no\" when asked if they have ever told a lie?",
+            "answer": "Tell them that they're telling you a lie right now, as everybody alive has lied."
+        },
+        {
+            "type": "open",
+            "question": "What should you do if someone persists in saying \"no\" to all questions about lying, using bad language, and being angry?",
+            "answer": "Ask if they have ever sinned against God. If they say no, quote Romans 3:23. If they still persist, tell them they have just committed the sin of pride."
+        },
+        {
+            "type": "open",
+            "question": "How do you respond if someone says \"Heaven\" when asked if their deserved reward/punishment sounds like a place in Heaven or Hell?",
+            "answer": "Ask them, \"Does heaven sound like punishment or would it be hell?\" You can also ask if a judge would send a criminal to Disneyland or Prison."
+        },
+        {
+            "type": "open",
+            "question": "What is the response if someone believes Jesus only pays for their past sins, but not their future ones?",
+            "answer": "Ask them, \"If Jesus died for 100% of your sins, that would have to include your future sins right?\""
+        },
+        {
+            "type": "open",
+            "question": "How do you reply if someone says \"heaven\" when asked where they would end up if they don't accept the gift of Jesus paying for their sins?",
+            "answer": "Use a gift analogy: \"If I offered you a gift today, but you didn't accept it from me, have you actually received that gift?\" Explain that if we don't accept Jesus's gift, we won't receive it."
+        },
+        {
+            "type": "open",
+            "question": "What should you ask if they answer \"before you die\" when you ask WHEN they should start trusting Jesus?",
+            "answer": "Ask them, \"Do you know when you will die? If not, when should you start trusting that Jesus paid for your sins?\""
+        },
+        {
+            "type": "open",
+            "question": "How do you respond if a person is less than 100% sure they will go to Heaven when they die?",
+            "answer": "Ask what reason gets them to heaven (Jesus), how much punishment Jesus took (all of it), and how much is left for them in hell (none). Then ask how sure they are again."
+        },
+        {
+            "type": "open",
+            "question": "What analogy can you use if someone cannot explain why we should do good things if good deeds don't get us to heaven?",
+            "answer": "Use the fireman analogy: \"If you are in a burning building and a fireman risks his life to bring you out to safety, what would you want to do for that fireman who saved you?\" Explain we do good things out of thankfulness."
+        },
+        {
+            "type": "open",
+            "question": "How can you use a car-washing analogy to explain that heaven is a completely free gift?",
+            "answer": "Ask, \"If I said 'I'll give you a gift of $20 if you wash my car'. Is that $20 really a gift?\" Explain that Jesus doesn't say \"I'll die for you if you do good things\" because that wouldn't be a free gift."
+        },
+        {
+            "type": "open",
+            "question": "How should you respond to someone who acknowledges their church teaches the wrong way to heaven?",
+            "answer": "Ask, \"So do you think it's a good idea to keep attending a church that teaches the wrong way to heaven?\" and suggest they find a Bible-teaching church or provide resources to grow their faith."
+        },
+        {
+            "type": "mc",
+            "question": "If doing good things doesn't get us into heaven, what is the script's primary reason for why we should do good things?",
+            "options": [
+                "To impress other people",
+                "Because we are thankful for what Jesus has done",
+                "To make up for our past sins",
+                "So God will love us more"
+            ],
+            "answer": 1,
+            "explanation": "We do good things because we are thankful. We don't stop our sins and do good things for Jesus to save us, we do good things for him because he HAS saved us."
+        },
+        {
+            "type": "mc",
+            "question": "According to the script, what does 'repentance' actually mean?",
+            "options": [
+                "Just asking for forgiveness",
+                "Doing a certain number of good deeds",
+                "Changing your mind from trusting yourself to trusting in Christ",
+                "Feeling incredibly guilty about your sins"
+            ],
+            "answer": 2,
+            "explanation": "Repentance means changing your mind from trusting yourself to trusting in Christ. Asking for forgiveness and turning from sin are merely the 'result' of repentance."
+        },
+        {
+            "type": "mc",
+            "question": "Why shouldn't a person answer 'Why should God let you into heaven?' with a statement that starts with 'I' (e.g., 'I accept' or 'I believe')?",
+            "options": [
+                "It points to what WE have done rather than what Jesus has done.",
+                "God already knows the answer, so it's disrespectful.",
+                "It is grammatically incorrect for prayer.",
+                "We should start our sentences with 'We' to include the church."
+            ],
+            "answer": 0,
+            "explanation": "Starting in the first person 'I' points to what WE have done for God rather than what Jesus has done for us. The answer should start in the third person, like 'Because Jesus...'."
+        },
+        {
+            "type": "mc",
+            "question": "Which analogy is used to explain that zero punishment is left if Jesus pays for it all?",
+            "options": [
+                "The burning building analogy",
+                "The $1000 speeding fine analogy",
+                "The $1M briefcase analogy",
+                "The car-washing analogy"
+            ],
+            "answer": 1,
+            "explanation": "If you had a $1000 speeding fine and someone pays all $1000 for you as a gift, there is zero left for you to pay. In the same way, Jesus pays 100% of our hell fine."
+        },
+        {
+            "type": "mc",
+            "question": "If someone thinks they are going to heaven because Jesus died for their sins AND they have been a good person, where does the script say they will end up?",
+            "options": [
+                "Heaven",
+                "Purgatory",
+                "Hell",
+                "Limbo"
+            ],
+            "answer": 2,
+            "explanation": "By trusting in two things, they aren't trusting 100% in Jesus. It becomes 50% Jesus and 50% their actions, meaning they would end up in Hell because they must trust ONLY in Jesus."
+        }
+    ]
+}

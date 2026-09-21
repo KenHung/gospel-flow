@@ -4,6 +4,11 @@
       "id": "gospel",
       "name": "Gospel Conversations",
       "file": "./decks/gospel.json"
+    },
+    {
+      "id": "gospel2",
+      "name": "Evangelism Script Scenarios",
+      "file": "./decks/gospel2.json"
     }
   ]
 }
