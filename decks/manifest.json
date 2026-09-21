@@ -2,13 +2,8 @@
   "decks": [
     {
       "id": "gospel",
-      "name": "Gospel Conversations",
+      "name": "Gospel Flow Scenarios",
       "file": "./decks/gospel.json"
-    },
-    {
-      "id": "gospel2",
-      "name": "Evangelism Script Scenarios",
-      "file": "./decks/gospel2.json"
     }
   ]
 }

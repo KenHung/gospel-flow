@@ -37,8 +37,8 @@ createApp({
     },
     startLabel() {
       const n = this.selectedDeckIds.length;
-      if (n === 0) return "請選擇牌組後開始";
-      return n === 1 ? "開始" : `開始（${n} 個牌組）`;
+      if (n === 0) return "Select deck(s) to begin";
+      return n === 1 ? "Start" : `Start (${n} decks)`;
     },
     // Text shown on the answer (back) face of an open-ended card.
     backAnswer() {
@@ -56,10 +56,10 @@ createApp({
         const data = await res.json();
         this.manifest = Array.isArray(data.decks) ? data.decks : [];
         if (!this.manifest.length) {
-          this.error = "清單中還沒有牌組。";
+          this.error = "There are no decks in the list.";
         }
       } catch (e) {
-        this.error = `無法載入牌組列表。${e.message}`;
+        this.error = `Unable to load deck list.${e.message ? ` ${e.message}` : ""}`;
       } finally {
         this.loading = false;
       }
@@ -86,7 +86,7 @@ createApp({
         );
 
         let merged = loaded.flat();
-        if (!merged.length) throw new Error("所選牌組中沒有卡片。");
+        if (!merged.length) throw new Error("There are no cards in the selected deck(s).");
         if (this.shuffle) merged = this.shuffled(merged);
 
         this.cards = merged;
@@ -94,7 +94,7 @@ createApp({
         this.resetCardState();
         this.screen = "card";
       } catch (e) {
-        this.error = `無法開始學習。${e.message}`;
+        this.error = `Unable to start study.${e.message ? ` ${e.message}` : ""}`;
         this.screen = "picker";
       } finally {
         this.starting = false;
