@@ -31,8 +31,13 @@
     <!-- ============ PICKER ============ -->
     <section v-else-if="screen === 'picker'" class="picker">
       <header class="masthead">
-        <h1 class="wordmark">Recall</h1>
-        <p class="tagline">Choose decks</p>
+        <div class="masthead-row">
+          <div>
+            <h1 class="wordmark">Recall</h1>
+            <p class="tagline">Choose decks</p>
+          </div>
+          <button class="guide-link outline" @click="openGuide">Question guide</button>
+        </div>
       </header>
 
       <fieldset class="deck-list">
@@ -52,6 +57,32 @@
         @click="start">
         {{ startLabel }}
       </button>
+    </section>
+
+    <!-- ============ GUIDE ============ -->
+    <section v-else-if="screen === 'guide'" class="guide">
+      <button class="home-btn outline" @click="screen = 'picker'" aria-label="Back to deck selection">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 18 9 12l6-6" />
+        </svg>
+        Back to decks
+      </button>
+
+      <article v-if="guideLoading" class="guide-state">
+        <p class="muted">Loading guide…</p>
+      </article>
+      <article v-else-if="guideError" class="guide-state">
+        <p class="error-text">{{ guideError }}</p>
+        <button class="outline" @click="loadGuide">Retry</button>
+      </article>
+      <article v-else class="guide-document">
+        <div class="guide-intro">
+          <p class="eyebrow">Field guide</p>
+          <h2>福音流程問題</h2>
+        </div>
+        <div class="markdown" v-html="guideHtml"></div>
+      </article>
     </section>
 
     <!-- ============ CARD ============ -->
@@ -135,6 +166,7 @@
   </main>
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="./app.js"></script>
 </body>
 

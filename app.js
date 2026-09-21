@@ -20,10 +20,13 @@ createApp({
       index: 0,
       flipped: false,        // is the card showing its back (answer)?
       chosen: null,          // MC selected option index
-      screen: "picker",      // 'picker' | 'card' | 'done'
+      screen: "picker",      // 'picker' | 'card' | 'done' | 'guide'
       loading: true,
       starting: false,
       error: "",
+      guideHtml: "",
+      guideLoading: false,
+      guideError: "",
     };
   },
 
@@ -63,6 +66,26 @@ createApp({
       } finally {
         this.loading = false;
       }
+    },
+
+    async loadGuide() {
+      this.guideLoading = true;
+      this.guideError = "";
+      try {
+        const res = await fetch("./docs/questions.md", { cache: "no-store" });
+        if (!res.ok) throw new Error(`Guide request failed (${res.status}).`);
+        const markdown = await res.text();
+        this.guideHtml = marked.parse(markdown, { breaks: true });
+      } catch (e) {
+        this.guideError = `Unable to load question guide.${e.message ? ` ${e.message}` : ""}`;
+      } finally {
+        this.guideLoading = false;
+      }
+    },
+
+    openGuide() {
+      this.screen = "guide";
+      if (!this.guideHtml) this.loadGuide();
     },
 
     async start() {
