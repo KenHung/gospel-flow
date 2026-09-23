@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-HK">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,211 +8,28 @@
     <!-- Load Pico.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Load Fonts and Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --pico-font-family: 'Noto Sans HK', sans-serif;
-            --phase-0-color: #3b82f6; /* 開場 - Blue (shifted to avoid clashing with Green) */
-            --phase-1-color: #d97706; /* 律法 - Yellow/Amber (darkened slightly for text readability) */
-            --phase-2-color: #dc2626; /* 福音 - Red */
-            --phase-3-color: #8b5cf6; /* 測驗 - Purple */
-            --phase-4-color: #16a34a; /* 栽培 - Green */
-        }
-
-        html { scroll-behavior: smooth; }
-        
-        /* Sticky Header */
-        header.top-header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background-color: var(--pico-background-color);
-            border-bottom: 1px solid var(--pico-muted-border-color);
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-        }
-
-        /* Nav overrides for horizontal scrolling on mobile */
-        .quick-nav {
-            overflow-x: auto;
-            white-space: nowrap;
-            padding-bottom: 0.5rem;
-        }
-        .quick-nav a { font-size: 0.85rem; padding: 0.25rem 0.75rem; border-radius: 1rem; text-decoration: none; }
-        .nav-p0 { background: color-mix(in srgb, var(--phase-0-color) 15%, transparent); color: var(--phase-0-color); }
-        .nav-p1 { background: color-mix(in srgb, var(--phase-1-color) 15%, transparent); color: var(--phase-1-color); }
-        .nav-p2 { background: color-mix(in srgb, var(--phase-2-color) 15%, transparent); color: var(--phase-2-color); }
-        .nav-p3 { background: color-mix(in srgb, var(--phase-3-color) 15%, transparent); color: var(--phase-3-color); }
-        .nav-p4 { background: color-mix(in srgb, var(--phase-4-color) 15%, transparent); color: var(--phase-4-color); }
-
-        /* Grid Layouts */
-        .overview-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1rem;
-        }
-
-        .split-layout {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            align-items: start;
-        }
-        @media (min-width: 992px) {
-            .split-layout { grid-template-columns: 3fr 2fr; }
-        }
-
-        .sticky-sidebar {
-            position: sticky;
-            top: 6rem;
-        }
-
-        /* Phase Styling System */
-        .phase-section {
-            padding-top: 4rem;
-            margin-bottom: 2rem;
-        }
-        .p0 { --current-phase: var(--phase-0-color); }
-        .p1 { --current-phase: var(--phase-1-color); }
-        .p2 { --current-phase: var(--phase-2-color); }
-        .p3 { --current-phase: var(--phase-3-color); }
-        .p4 { --current-phase: var(--phase-4-color); }
-
-        .phase-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        .phase-icon {
-            background-color: var(--current-phase);
-            color: #fff;
-            width: 3rem;
-            height: 3rem;
-            border-radius: var(--pico-border-radius);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-        }
-        .phase-title {
-            color: var(--current-phase);
-            margin: 0;
-            font-weight: 900;
-        }
-
-        /* Overview Cards */
-        .overview-card { border-top: 4px solid var(--current-phase); }
-        .overview-card header { font-weight: bold; color: var(--current-phase); padding-bottom: 0.5rem; }
-        .overview-card footer { background: color-mix(in srgb, var(--current-phase) 10%, transparent); color: var(--pico-color); }
-
-        /* Questions */
-        .question-row {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            align-items: baseline;
-        }
-        .q-badge {
-            background-color: color-mix(in srgb, var(--current-phase) 20%, transparent);
-            color: var(--current-phase);
-            border: 1px solid var(--current-phase);
-            border-radius: 50%;
-            min-width: 2rem;
-            height: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            flex-shrink: 0;
-            transform: translateY(0.25rem);
-        }
-        .q-badge.solid {
-            background-color: var(--current-phase);
-            color: #fff;
-        }
-        .q-content { font-size: 1.1rem; font-weight: 500; }
-        
-        .highlight-box {
-            background-color: var(--current-phase);
-            color: #fff;
-            padding: 1.5rem;
-            border-radius: var(--pico-border-radius);
-            margin-bottom: 2rem;
-            font-weight: bold;
-            font-size: 1.25rem;
-            box-shadow: var(--pico-card-box-shadow);
-        }
-
-        /* Rebuttals - Static Blocks */
-        .rebuttal-card header { background-color: color-mix(in srgb, var(--current-phase) 10%, transparent); display: flex; align-items: center; gap: 0.5rem; font-weight: bold; }
-        .rebuttal-item { margin-bottom: 1rem; border-bottom: 1px solid var(--pico-muted-border-color); padding-bottom: 1rem; }
-        .rebuttal-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .rebuttal-title { font-weight: bold; color: var(--current-phase); margin-bottom: 0.5rem; font-size: 1.05rem; }
-
-        /* Overview Skip Path Arrow */
-        .overview-wrapper { position: relative; margin-bottom: 3rem; }
-        .skip-path-desktop { display: none; }
-        .skip-path-mobile { 
-            display: block; text-align: center; margin: 1rem 0; padding: 0.75rem; 
-            border: 2px dashed var(--phase-3-color); border-radius: var(--pico-border-radius); 
-            color: var(--phase-3-color); font-weight: bold; 
-            background-color: color-mix(in srgb, var(--phase-3-color) 5%, transparent); 
-        }
-        
-        @media (min-width: 1200px) {
-            .overview-grid { grid-template-columns: repeat(5, 1fr); }
-            .skip-path-mobile { display: none; }
-            .skip-path-desktop {
-                display: block;
-                position: absolute;
-                top: 100%;
-                left: 10%; /* Center of 1st column */
-                width: 60%; /* To center of 4th column */
-                height: 30px;
-                border: 2px dashed var(--phase-3-color);
-                border-top: none;
-                border-radius: 0 0 12px 12px;
-                z-index: 10;
-            }
-            .skip-path-desktop::after {
-                content: '▲';
-                position: absolute;
-                right: -6.5px;
-                top: -14px;
-                color: var(--phase-3-color);
-                font-size: 16px;
-            }
-            .skip-path-label {
-                position: absolute;
-                bottom: -15px;
-                left: 50%;
-                transform: translateX(-50%);
-                background: var(--pico-background-color);
-                padding: 0 10px;
-                color: var(--phase-3-color);
-                font-size: 0.9rem;
-                font-weight: bold;
-                white-space: nowrap;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./notes.css">
 </head>
+
 <body>
 
     <!-- Header -->
     <header class="top-header">
-        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+        <div class="container"
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
             <div style="display: flex; align-items: center; gap: 0.75rem;">
-                <kbd style="background: var(--phase-0-color); border: none;"><i class="fa-solid fa-book-bible"></i></kbd>
+                <kbd style="background: var(--phase-0-color); border: none;"><i
+                        class="fa-solid fa-book-bible"></i></kbd>
                 <h1 style="margin: 0; font-size: 1.25rem;">福音流程詳解</h1>
             </div>
-            
+
             <nav class="quick-nav">
                 <ul style="margin: 0; padding: 0; display: flex; gap: 0.5rem; list-style: none;">
-                    <li><a href="#overview" class="secondary" style="background: var(--pico-form-element-background-color);">總覽</a></li>
+                    <li><a href="#overview" class="secondary"
+                            style="background: var(--pico-form-element-background-color);">總覽</a></li>
                     <li><a href="#phase-0" class="nav-p0">開場</a></li>
                     <li><a href="#phase-1" class="nav-p1">I. 律法</a></li>
                     <li><a href="#phase-2" class="nav-p2">II. 福音</a></li>
@@ -227,7 +45,7 @@
         <!-- 總覽與推進條件 (Overview & Conditions) -->
         <section id="overview" class="phase-section" style="padding-top: 2rem;">
             <h2><i class="fa-solid fa-map-location-dot" style="opacity: 0.5;"></i> 階段總覽與推進條件</h2>
-            
+
             <div class="overview-wrapper">
                 <div class="overview-grid">
                     <article class="overview-card p0">
@@ -265,7 +83,7 @@
                         <footer><small><strong>實踐目標：</strong>鼓勵遠離罪惡、讀聖經、尋找合適教會。</small></footer>
                     </article>
                 </div>
-                
+
                 <!-- Desktop visual skip arrow -->
                 <div class="skip-path-desktop">
                     <div class="skip-path-label"><i class="fa-solid fa-share"></i> 自稱基督徒可跳至測驗</div>
@@ -281,14 +99,14 @@
                 <div class="phase-icon"><i class="fa-regular fa-comments"></i></div>
                 <h2 class="phase-title">開場</h2>
             </div>
-            
+
             <div class="split-layout">
                 <!-- Left: Questions -->
                 <div>
                     <div class="highlight-box">
                         「Hello 可以問你一個問題嘛？」
                     </div>
-                    
+
                     <article>
                         <div class="question-row">
                             <div class="q-badge">1</div>
@@ -307,7 +125,7 @@
                 <div class="sticky-sidebar">
                     <article class="rebuttal-card p0">
                         <header><i class="fa-solid fa-reply-all"></i> 常見反應與應對</header>
-                        
+
                         <div class="rebuttal-item">
                             <div class="rebuttal-title">唔知 / 無諗 / 無神論</div>
                             <ul>
@@ -331,7 +149,7 @@
                 <div class="phase-icon"><i class="fa-solid fa-scale-balanced"></i></div>
                 <h2 class="phase-title">I. 律法</h2>
             </div>
-            
+
             <div class="split-layout">
                 <!-- Left: Questions -->
                 <div>
@@ -339,7 +157,8 @@
                         <div class="question-row">
                             <div class="q-badge">2</div>
                             <div class="q-content">
-                                <small style="opacity: 0.6; display: block; margin-bottom: 0.25rem;">(我哋應該要滿足神嘅規則)，</small>
+                                <small
+                                    style="opacity: 0.6; display: block; margin-bottom: 0.25rem;">(我哋應該要滿足神嘅規則)，</small>
                                 你覺得自己算唔算好人？
                             </div>
                         </div>
@@ -357,10 +176,12 @@
                         </div>
                     </article>
 
-                    <article style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
+                    <article
+                        style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
                         <div class="question-row" style="margin-bottom: 0;">
                             <div class="q-badge solid">6</div>
-                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">如果神根據呢啲嘢審判我哋，我哋會有罪定無罪？</div>
+                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">
+                                如果神根據呢啲嘢審判我哋，我哋會有罪定無罪？</div>
                         </div>
                     </article>
 
@@ -370,15 +191,20 @@
                             <div class="q-content">神會獎你定罰你？</div>
                         </div>
                         <div class="question-row">
-                            <div class="q-badge" style="background-color: var(--pico-del-color); color: white; border-color: var(--pico-del-color);">8</div>
-                            <div class="q-content" style="color: var(--pico-del-color); font-weight: bold;">似去天堂定地獄？</div>
+                            <div class="q-badge"
+                                style="background-color: var(--pico-del-color); color: white; border-color: var(--pico-del-color);">
+                                8</div>
+                            <div class="q-content" style="color: var(--pico-del-color); font-weight: bold;">似去天堂定地獄？
+                            </div>
                         </div>
                     </article>
 
-                    <article style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
+                    <article
+                        style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
                         <div class="question-row" style="margin-bottom: 0;">
                             <div class="q-badge solid">9</div>
-                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">點先可以唔使去地獄？</div>
+                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">點先可以唔使去地獄？
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -401,8 +227,9 @@
                         </div>
                         <div class="rebuttal-item">
                             <div class="rebuttal-title">我罪不致死，神唔會罰咁重</div>
-                            <p><small>你覺得天堂有冇罪？仲會唔會被人呃？仲有冇人講大話？（因為講大話嘅人去唔到天堂）<br><ins>※ 若對方信聖經，可用啟示錄 21:8</ins></small></p>
-                        </div>                        
+                            <p><small>你覺得天堂有冇罪？仲會唔會被人呃？仲有冇人講大話？（因為講大話嘅人去唔到天堂）<br><ins>※ 若對方信聖經，可用啟示錄 21:8</ins></small>
+                            </p>
+                        </div>
                         <div class="rebuttal-item">
                             <div class="rebuttal-title">神會饒恕所有人</div>
                             <ul>
@@ -422,13 +249,14 @@
                 <div class="phase-icon"><i class="fa-solid fa-cross"></i></div>
                 <h2 class="phase-title">II. 福音</h2>
             </div>
-            
+
             <div class="split-layout">
                 <!-- Left: Questions -->
                 <div>
                     <div class="highlight-box">
                         <div class="question-row" style="margin-bottom: 0;">
-                            <div class="q-badge solid" style="background-color: rgba(255,255,255,0.2); border: none;">10</div>
+                            <div class="q-badge solid" style="background-color: rgba(255,255,255,0.2); border: none;">10
+                            </div>
                             <div class="q-content">
                                 我哋需要有人為我哋承擔後果，就係耶穌基督，所以佢為我哋嘅罪死係十字架上面，3日之後復活。
                             </div>
@@ -446,13 +274,16 @@
                         </div>
                     </article>
 
-                    <article style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
+                    <article
+                        style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
                         <div class="question-row">
                             <div class="q-badge solid">13</div>
                             <div class="q-content">
                                 <strong style="color: var(--current-phase);">所以，點樣先上到天堂？</strong>
-                                <blockquote style="margin-top: 1rem; font-size: 1rem; background: var(--pico-background-color);">
-                                    <i class="fa-solid fa-gift" style="color: var(--current-phase);"></i> 呢一份係免費嘅禮物，想要接受嘅話，我哋只需要心裡邊 <strong>相信耶穌為我哋100%嘅罪死喺十字架上面。</strong>
+                                <blockquote
+                                    style="margin-top: 1rem; font-size: 1rem; background: var(--pico-background-color);">
+                                    <i class="fa-solid fa-gift" style="color: var(--current-phase);"></i>
+                                    呢一份係免費嘅禮物，想要接受嘅話，我哋只需要心裡邊 <strong>相信耶穌為我哋100%嘅罪死喺十字架上面。</strong>
                                 </blockquote>
                             </div>
                         </div>
@@ -469,7 +300,8 @@
                         </div>
                     </article>
 
-                    <article style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
+                    <article
+                        style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
                         <div class="question-row" style="margin-bottom: 0;">
                             <div class="q-badge solid">16</div>
                             <div class="q-content" style="color: var(--current-phase); font-weight: bold;">
@@ -486,10 +318,12 @@
                 <div class="sticky-sidebar">
                     <article class="rebuttal-card p2">
                         <header><i class="fa-solid fa-reply-all"></i> 常見反應與應對</header>
-                        
+
                         <div class="rebuttal-item">
                             <div class="rebuttal-title">認為做好人可以免下地獄</div>
-                            <p><small><mark style="background-color: color-mix(in srgb, var(--phase-1-color) 20%, transparent); color: var(--phase-1-color);">重溫【I. 律法】階段的答案，重新解釋為何善行不能抵消罪。</mark></small></p>
+                            <p><small><mark
+                                        style="background-color: color-mix(in srgb, var(--phase-1-color) 20%, transparent); color: var(--phase-1-color);">重溫【I.
+                                        律法】階段的答案，重新解釋為何善行不能抵消罪。</mark></small></p>
                         </div>
                         <div class="rebuttal-item">
                             <div class="rebuttal-title">不明白恩典</div>
@@ -513,14 +347,16 @@
                 <div class="phase-icon"><i class="fa-solid fa-clipboard-question"></i></div>
                 <h2 class="phase-title">III. 測驗</h2>
             </div>
-            
+
             <div class="split-layout">
                 <!-- Left: Questions -->
                 <div>
-                    <article style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
+                    <article
+                        style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
                         <div class="question-row" style="margin-bottom: 0;">
                             <div class="q-badge solid">17</div>
-                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">如果你企喺神嘅面前，神問你：「點解我要比你上天堂？」你會點答？</div>
+                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">
+                                如果你企喺神嘅面前，神問你：「點解我要比你上天堂？」你會點答？</div>
                         </div>
                     </article>
 
@@ -552,10 +388,12 @@
                         </div>
                     </article>
 
-                    <article style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
+                    <article
+                        style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
                         <div class="question-row" style="margin-bottom: 0;">
                             <div class="q-badge solid">23</div>
-                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">如果你而家死，你會去邊？</div>
+                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">如果你而家死，你會去邊？
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -564,7 +402,7 @@
                 <div class="sticky-sidebar">
                     <article class="rebuttal-card p3">
                         <header><i class="fa-solid fa-reply-all"></i> 常見反應與應對</header>
-                        
+
                         <div class="rebuttal-item">
                             <div class="rebuttal-title">對上天堂的確據少於 100%</div>
                             <ol style="padding-left: 1.2rem; margin-bottom: 0.5rem; color: var(--pico-color);">
@@ -573,7 +411,8 @@
                                 <li><small>問：「咁你仲有幾多懲罰淨低，要去地獄承擔？」<em>(預期答案：無/零)</em></small></li>
                                 <li><small>問：「如果你相信呢一點，由 0-100 分，你有幾肯定你會去天堂？」</small></li>
                             </ol>
-                            <p style="margin: 0;"><small><ins>※ 若對方仍然唔肯定，問佢哋有咩顧慮，並提醒對方：耶穌已經清還咗過去、現在和將來所有的罪債。</ins></small></p>
+                            <p style="margin: 0;"><small><ins>※
+                                        若對方仍然唔肯定，問佢哋有咩顧慮，並提醒對方：耶穌已經清還咗過去、現在和將來所有的罪債。</ins></small></p>
                         </div>
                         <div class="rebuttal-item">
                             <div class="rebuttal-title">仍然認為「朋友靠好行為能上天堂」</div>
@@ -581,13 +420,14 @@
                         </div>
                         <div class="rebuttal-item">
                             <div class="rebuttal-title">朋友需要同時滿足信耶穌 + 做好事才去「天堂」</div>
-                            <p><small>告訴對方：「如果依靠兩個原因，即是沒有 100% 相信耶穌能拯救他們。這變成了 50% 靠耶穌，50% 靠自己。如果耶穌只佔 50%，他們最後會去邊？(地獄)。我們必須相信耶穌是得救的『唯一』原因，不能摻雜自己的行為。」</small></p>
+                            <p><small>告訴對方：「如果依靠兩個原因，即是沒有 100% 相信耶穌能拯救他們。這變成了 50% 靠耶穌，50% 靠自己。如果耶穌只佔
+                                    50%，他們最後會去邊？(地獄)。我們必須相信耶穌是得救的『唯一』原因，不能摻雜自己的行為。」</small></p>
                         </div>
                         <div class="rebuttal-item">
                             <div class="rebuttal-title">回答神：「因為我信 / 我接受...」</div>
                             <p><small>如果答案以第一人稱「我」開始，很容易變成指望「我」為神做的事。引導對方用第三人稱「因為耶穌...」回答，確保重點是耶穌為我們成就的事。</small></p>
                         </div>
-                     </article>
+                    </article>
                 </div>
             </div>
         </section>
@@ -598,18 +438,21 @@
                 <div class="phase-icon"><i class="fa-solid fa-seedling"></i></div>
                 <h2 class="phase-title">IV. 栽培</h2>
             </div>
-            
+
             <div class="split-layout">
                 <!-- Left: Questions -->
                 <div>
-                    <article style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
+                    <article
+                        style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
                         <div class="question-row" style="margin-bottom: 0;">
                             <div class="q-badge solid">24</div>
-                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">既然做好人同上天堂冇關係，咁點解要做好人？</div>
+                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">
+                                既然做好人同上天堂冇關係，咁點解要做好人？</div>
                         </div>
                     </article>
 
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: var(--pico-spacing);">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: var(--pico-spacing);">
                         <article style="margin: 0;">
                             <div class="question-row" style="margin: 0;">
                                 <div class="q-badge">25</div>
@@ -643,7 +486,8 @@
                         </div>
                     </article>
 
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: var(--pico-spacing);">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: var(--pico-spacing);">
                         <article style="margin: 0;">
                             <div class="question-row" style="margin: 0;">
                                 <div class="q-badge">30</div>
@@ -671,10 +515,12 @@
                         </div>
                     </article>
 
-                    <article style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
+                    <article
+                        style="background-color: color-mix(in srgb, var(--current-phase) 5%, transparent); border: 1px solid var(--current-phase);">
                         <div class="question-row" style="margin-bottom: 0;">
                             <div class="q-badge solid">34</div>
-                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">如果神問你：「你犯咁多罪，點解唔將你送落地獄？」你會點答？</div>
+                            <div class="q-content" style="color: var(--current-phase); font-weight: bold;">
+                                如果神問你：「你犯咁多罪，點解唔將你送落地獄？」你會點答？</div>
                         </div>
                     </article>
 
@@ -684,19 +530,26 @@
                 <div class="sticky-sidebar">
                     <article class="rebuttal-card p4">
                         <header><i class="fa-solid fa-list-check"></i> 栽培目標</header>
-                        
+
                         <div style="padding: 1rem; display: flex; flex-direction: column; gap: 1.5rem;">
                             <div>
-                                <h6 style="color: var(--current-phase); margin-bottom: 0.25rem;"><i class="fa-solid fa-heart" style="opacity: 0.7; margin-right: 0.5rem;"></i>感恩與順服</h6>
+                                <h6 style="color: var(--current-phase); margin-bottom: 0.25rem;"><i
+                                        class="fa-solid fa-heart" style="opacity: 0.7; margin-right: 0.5rem;"></i>感恩與順服
+                                </h6>
                                 <p style="margin: 0;"><small>引導對方明白做好人是出於對神拯救的感恩，而不是為了賺取救恩 (Q24)。</small></p>
                             </div>
                             <div>
-                                <h6 style="color: var(--current-phase); margin-bottom: 0.25rem;"><i class="fa-solid fa-book" style="opacity: 0.7; margin-right: 0.5rem;"></i>建立靈修習慣</h6>
+                                <h6 style="color: var(--current-phase); margin-bottom: 0.25rem;"><i
+                                        class="fa-solid fa-book" style="opacity: 0.7; margin-right: 0.5rem;"></i>建立靈修習慣
+                                </h6>
                                 <p style="margin: 0;"><small>用吃飯作比喻，強調查考聖經對屬靈生命成長的必要性 (Q26-28)。</small></p>
                             </div>
                             <div>
-                                <h6 style="color: var(--current-phase); margin-bottom: 0.25rem;"><i class="fa-solid fa-users" style="opacity: 0.7; margin-right: 0.5rem;"></i>尋找教會與傳福音</h6>
-                                <p style="margin: 0;"><small>鼓勵返教會 (Q29)，釐清受洗的意義 (Q31)，並激發對方為家人朋友的靈魂著急 (Q32-33)。</small></p>
+                                <h6 style="color: var(--current-phase); margin-bottom: 0.25rem;"><i
+                                        class="fa-solid fa-users"
+                                        style="opacity: 0.7; margin-right: 0.5rem;"></i>尋找教會與傳福音</h6>
+                                <p style="margin: 0;"><small>鼓勵返教會 (Q29)，釐清受洗的意義 (Q31)，並激發對方為家人朋友的靈魂著急 (Q32-33)。</small>
+                                </p>
                             </div>
                         </div>
                     </article>
@@ -707,12 +560,16 @@
     </main>
 
     <!-- Footer -->
-    <footer style="background-color: var(--pico-form-element-background-color); padding: 2rem 0; border-top: 1px solid var(--pico-muted-border-color);">
-        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
-            <small style="color: var(--pico-muted-color);">佈道訓練實戰筆記 (needgod.net 佈道法)</small>
-            <a href="#" role="button" class="outline secondary" style="border-radius: 2rem; padding: 0.5rem 1rem;"><i class="fa-solid fa-arrow-up"></i> 回到頂部</a>
+    <footer
+        style="background-color: var(--pico-form-element-background-color); padding: 2rem 0; border-top: 1px solid var(--pico-muted-border-color);">
+        <div class="container"
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+            <small style="color: var(--pico-muted-color);">福音流程詳解</small>
+            <a href="#" role="button" class="outline secondary" style="border-radius: 2rem; padding: 0.5rem 1rem;"><i
+                    class="fa-solid fa-arrow-up"></i> 回到頂部</a>
         </div>
     </footer>
 
 </body>
+
 </html>
