@@ -51,32 +51,65 @@
 
     <!-- ============ PICKER ============ -->
     <section v-else-if="screen === 'picker'" class="picker">
-      <header class="masthead">
-        <div class="masthead-row">
-          <div>
-            <h1 class="wordmark">Recall</h1>
-            <p class="tagline">Choose decks</p>
-          </div>
+      <header class="home-intro">
+        <div>
+          <h1 class="wordmark">No chat is in vain</h1>
+          <p class="tagline">只要心裏尊主基督為聖。有人問你們心中盼望的緣由，就要常作準備，以溫柔、敬畏的心回答各人；<span class="verse-reference">彼得前書 3:15</span>
+          </p>
         </div>
+        <section class="study-launch" aria-labelledby="study-title">
+          <div class="section-kicker"><span>01</span> Practice deck</div>
+          <div class="launch-copy">
+            <div>
+              <h2 id="study-title">Start with a card.</h2>
+              <p>Choose a language and move through the Gospel Flow scenarios at your own pace.</p>
+            </div>
+          </div>
+
+          <fieldset class="deck-list">
+            <legend>Available decks</legend>
+            <label v-for="deck in manifest" :key="deck.id" class="deck-row"
+              :class="{ 'is-selected': selectedDeckIds.includes(deck.id) }">
+              <input type="checkbox" :value="deck.id" v-model="selectedDeckIds" />
+              <span class="deck-name">{{ deck.name }}</span>
+              <span class="deck-check" aria-hidden="true">{{ selectedDeckIds.includes(deck.id) ? 'Selected' : 'Select'
+                }}</span>
+            </label>
+          </fieldset>
+
+          <div class="launch-footer">
+            <label class="shuffle-row">
+              <input type="checkbox" role="switch" v-model="shuffle" />
+              Shuffle order
+            </label>
+            <button class="start-btn" :disabled="selectedDeckIds.length === 0 || starting" :aria-busy="starting"
+              @click="start">
+              {{ startLabel }}
+            </button>
+          </div>
+        </section>
       </header>
 
-      <fieldset class="deck-list">
-        <label v-for="deck in manifest" :key="deck.id" class="deck-row"
-          :class="{ 'is-selected': selectedDeckIds.includes(deck.id) }">
-          <input type="checkbox" :value="deck.id" v-model="selectedDeckIds" />
-          <span class="deck-name">{{ deck.name }}</span>
-        </label>
-      </fieldset>
-
-      <label class="shuffle-row">
-        <input type="checkbox" role="switch" v-model="shuffle" />
-        Shuffle order
-      </label>
-
-      <button class="start-btn" :disabled="selectedDeckIds.length === 0 || starting" :aria-busy="starting"
-        @click="start">
-        {{ startLabel }}
-      </button>
+      <div class="home-grid">
+        <aside class="home-alternatives" aria-label="Other ways to begin">
+          <a class="alternative-card questions-card" href="#guide">
+            <span class="card-number">02</span>
+            <span class="alternative-icon" aria-hidden="true">?</span>
+            <span class="alternative-content">
+              <strong>Questions</strong>
+              <span>Walk through the full conversation guide.</span>
+            </span>
+          </a>
+          <a class="alternative-card notes-card" href="./notes.html">
+            <span class="card-number">03</span>
+            <span class="alternative-icon" aria-hidden="true">✦</span>
+            <span class="alternative-content">
+              <strong>Notes</strong>
+              <span>Review the stages, cues, and next steps.</span>
+            </span>
+          </a>
+        </aside>
+      </div>
     </section>
 
     <!-- ============ GUIDE ============ -->
