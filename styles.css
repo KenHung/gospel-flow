@@ -1,27 +1,26 @@
 /* =========================================================
    Recall — flashcard app
-   Base: Pico CSS. This file retheme's Pico and adds the
-   study-desk look: sage paper, pine-green ink, and a
-   highlighter-yellow reveal as the one signature moment.
+   Base: Pico CSS. This theme follows the supplied Pico palette
+   with a fresh green accent and a warm highlight for answer reveal.
    ========================================================= */
 
 :root {
-  --bg: #e4e9e1;
-  --card: #fcfcfa;
-  --ink: #16211c;
-  --muted: #5c6b62;
-  --line: rgba(22, 33, 28, 0.12);
-  --accent: #1f5f55;
-  --accent-strong: #164a42;
-  --accent-ink: #fcfcfa;
-  --highlight: #f5c84b;
-  --correct: #2e7d53;
-  --correct-bg: #dcefe2;
-  --wrong: #b5443a;
-  --wrong-bg: #f6e1de;
+  --bg: #ebfdf6;
+  --card: #ffffff;
+  --ink: #0e1118;
+  --muted: #525f7a;
+  --line: rgba(14, 17, 24, 0.12);
+  --accent: #00895a;
+  --accent-strong: #006d46;
+  --accent-ink: #f6fff9;
+  --highlight: #ffbf00;
+  --correct: #006d46;
+  --correct-bg: #cbfce1;
+  --wrong: #d93526;
+  --wrong-bg: #faeeeb;
   --radius-card: 18px;
   --radius-ctl: 11px;
-  --shadow-card: 0 1px 2px rgba(22, 33, 28, 0.06), 0 18px 40px -24px rgba(22, 33, 28, 0.35);
+  --shadow-card: 0 1px 2px rgba(14, 17, 24, 0.06), 0 18px 40px -24px rgba(14, 17, 24, 0.35);
 
   /* Retheme Pico */
   --pico-font-family: "Public Sans", system-ui, sans-serif;
@@ -30,26 +29,27 @@
   --pico-primary: var(--accent);
   --pico-primary-background: var(--accent);
   --pico-primary-hover-background: var(--accent-strong);
-  --pico-primary-focus: rgba(31, 95, 85, 0.35);
+  --pico-primary-focus: rgba(0, 137, 90, 0.28);
   --pico-border-radius: var(--radius-ctl);
   --pico-spacing: 1rem;
 }
 
 [data-theme="dark"] {
-  --bg: #131a17;
-  --card: #1c2621;
-  --ink: #ebefe9;
-  --muted: #93a399;
-  --line: rgba(235, 239, 233, 0.14);
-  --accent: #57b79e;
-  --accent-strong: #6cc7af;
-  --accent-ink: #0e1613;
-  --highlight: #ecc352;
-  --correct: #7ac795;
-  --correct-bg: #22362b;
-  --wrong: #e08279;
+  --bg: #0e1118;
+  --card: #2a3140;
+  --ink: #eff1f4;
+  --muted: #a0acc7;
+  --line: rgba(239, 241, 244, 0.14);
+  --accent: #00c482;
+  --accent-strong: #00b478;
+  --accent-ink: #081610;
+  --highlight: #fecc63;
+  --correct: #21e299;
+  --correct-bg: #233c33;
+  --wrong: #f17961;
   --wrong-bg: #3a2523;
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 44px -26px rgba(0, 0, 0, 0.7);
+  --pico-primary-focus: rgba(0, 196, 130, 0.35);
 }
 
 [v-cloak] {
