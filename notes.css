@@ -6,6 +6,47 @@
     --phase-4-color: #398712;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main.container {
+    flex: 1 0 auto;
+}
+
+.page-footer {
+    margin-top: 3rem;
+    background: color-mix(in srgb, var(--pico-form-element-background-color) 90%, var(--pico-background-color));
+    border-top: 1px solid var(--pico-muted-border-color);
+    padding: 1.5rem 0;
+}
+
+.page-footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.page-footer small {
+    color: var(--pico-muted-color);
+}
+
+.back-to-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    padding: 0.55rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
 header.top-header {
     position: sticky;
     /* Sits directly beneath the shared, sticky .site-nav (~3.25rem tall). */
