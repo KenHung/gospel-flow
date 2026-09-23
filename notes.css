@@ -8,7 +8,8 @@
 
 header.top-header {
     position: sticky;
-    top: 0;
+    /* Sits directly beneath the shared, sticky .site-nav (~3.25rem tall). */
+    top: 3.25rem;
     z-index: 100;
     background-color: var(--pico-background-color);
     border-bottom: 1px solid var(--pico-muted-border-color);
@@ -75,7 +76,8 @@ header.top-header {
 
 .sticky-sidebar {
     position: sticky;
-    top: 6rem;
+    /* Clear both the site nav and the section quick-nav above it. */
+    top: 7rem;
 }
 
 .phase-section {

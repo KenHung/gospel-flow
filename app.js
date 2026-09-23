@@ -88,6 +88,17 @@ createApp({
       if (!this.guideHtml) this.loadGuide();
     },
 
+    // The top nav drives the guide via the URL hash so plain-HTML links
+    // (here and on notes.html) can reach it. #guide opens the guide;
+    // clearing the hash returns to the picker without clobbering study.
+    syncFromHash() {
+      if (location.hash === "#guide") {
+        this.openGuide();
+      } else if (this.screen === "guide") {
+        this.restart();
+      }
+    },
+
     async start() {
       if (!this.selectedDeckIds.length) return;
       this.starting = true;
@@ -200,5 +211,7 @@ createApp({
 
   mounted() {
     this.loadManifest();
+    this.syncFromHash();
+    window.addEventListener("hashchange", () => this.syncFromHash());
   },
 }).mount("#app");

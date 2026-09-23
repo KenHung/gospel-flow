@@ -127,13 +127,6 @@ button.outline:hover:not(:disabled) {
   gap: 1rem;
 }
 
-.guide-link {
-  flex: none;
-  margin-top: 0.15rem;
-  padding: 0.45rem 0.75rem;
-  font-size: 0.82rem;
-}
-
 .wordmark {
   font-family: "Fraunces", Georgia, serif;
   font-optical-sizing: auto;
@@ -330,22 +323,6 @@ button.outline:hover:not(:disabled) {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-.home-btn {
-  align-self: flex-start;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  width: auto;
-  padding: 0.4rem 0.8rem;
-  font-size: 0.9rem;
-  margin-bottom: -0.25rem;
-  /* tighten against the progress row */
-}
-
-.home-btn svg {
-  flex: none;
 }
 
 .progress {
@@ -654,10 +631,6 @@ button.outline:hover:not(:disabled) {
   .masthead-row {
     flex-direction: column;
     gap: 0.9rem;
-  }
-
-  .guide-link {
-    margin-top: 0;
   }
 
   .controls,
