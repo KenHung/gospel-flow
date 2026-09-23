@@ -97,6 +97,28 @@ createApp({
       } else if (this.screen === "guide") {
         this.restart();
       }
+      this.syncNavState();
+    },
+
+    syncNavState() {
+      const page = location.pathname.split("/").pop() || "index.html";
+      const hash = location.hash;
+      const target = page.endsWith("notes.html") ? "notes" : hash === "#guide" ? "guide" : "flashcards";
+
+      document.querySelectorAll(".site-links a").forEach((link) => {
+        const href = new URL(link.href, location.href);
+        const hrefPage = href.pathname.split("/").pop() || "index.html";
+        const matches =
+          (target === "flashcards" && hrefPage === "index.html" && href.hash !== "#guide") ||
+          (target === "guide" && href.hash === "#guide") ||
+          (target === "notes" && hrefPage === "notes.html");
+
+        if (matches) {
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
     },
 
     async start() {
