@@ -1,14 +1,9 @@
 :root {
-    --pico-font-family: 'Noto Sans HK', sans-serif;
     --phase-0-color: #3c71f7;
     --phase-1-color: #d8a100;
     --phase-2-color: #d93526;
     --phase-3-color: #9062ca;
     --phase-4-color: #398712;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 header.top-header {
