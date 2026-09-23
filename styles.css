@@ -23,7 +23,7 @@
   --shadow-card: 0 1px 2px rgba(14, 17, 24, 0.06), 0 18px 40px -24px rgba(14, 17, 24, 0.35);
 
   /* Retheme Pico */
-  --pico-font-family: "Public Sans", system-ui, sans-serif;
+  --pico-font-family: "Public Sans", "Noto Sans HK", "Microsoft JhengHei", "PingFang TC", "Segoe UI", sans-serif;
   --pico-background-color: var(--bg);
   --pico-color: var(--ink);
   --pico-primary: var(--accent);
@@ -59,7 +59,7 @@
 body {
   background-color: var(--bg);
   color: var(--ink);
-  font-family: "Public Sans", system-ui, sans-serif;
+  font-family: "Public Sans", "Noto Sans HK", "Microsoft JhengHei", "PingFang TC", "Segoe UI", sans-serif;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
@@ -192,8 +192,8 @@ button.outline:hover:not(:disabled) {
 }
 
 .deck-name {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 500;
+  font-family: "Public Sans", "Noto Sans HK", "Microsoft JhengHei", "PingFang TC", "Segoe UI", sans-serif;
+  font-weight: 700;
   font-size: 1.25rem;
 }
 
