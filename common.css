@@ -44,12 +44,12 @@ body {
     font-size: 0.95rem;
     line-height: 1;
     text-decoration: none;
-    color: var(--guide-accent, var(--pico-primary, currentColor));
+    color: var(--pico-color);
 }
 
 .site-brand svg {
     flex: none;
-    color: var(--guide-accent, var(--pico-primary, currentColor));
+    color: var(--pico-primary, currentColor);
 }
 
 .site-links {
