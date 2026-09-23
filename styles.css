@@ -628,6 +628,17 @@ button.outline:hover:not(:disabled) {
 
 @media (max-width: 30rem) {
 
+  #app.container {
+    padding-inline: 0.75rem;
+  }
+
+  .guide-document {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
   .masthead-row {
     flex-direction: column;
     gap: 0.9rem;
