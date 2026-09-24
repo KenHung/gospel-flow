@@ -75,7 +75,7 @@ All asset and deck paths are relative, so it works whether the site is served fr
 ```
 index.html            # markup + Vue template
 app.js                # Vue app: loading, selection, navigation
-styles.css            # theme on top of Pico CSS
+flashcards.css        # theme on top of Pico CSS
 decks/manifest.json   # list of available decks
 decks/*.json          # the decks themselves
 ```
