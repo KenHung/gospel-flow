@@ -89,7 +89,7 @@ createApp({
     },
 
     // The top nav drives the guide via the URL hash so plain-HTML links
-    // (here and on notes.html) can reach it. #guide opens the guide;
+    // (here and on flashcards.html) can reach it. #guide opens the guide;
     // clearing the hash returns to the picker without clobbering study.
     syncFromHash() {
       if (location.hash === "#guide") {
@@ -104,14 +104,14 @@ createApp({
       const page = location.pathname.split("/").pop() || "index.html";
       const hash = location.hash;
       const isNotesHome = page === "index.html";
-      const isFlashcardsPage = page === "notes.html";
+      const isFlashcardsPage = page === "flashcards.html";
       const target = isFlashcardsPage ? "flashcards" : hash === "#guide" ? "guide" : isNotesHome ? "notes" : "flashcards";
 
       document.querySelectorAll(".site-links a").forEach((link) => {
         const href = new URL(link.href, location.href);
         const hrefPage = href.pathname.split("/").pop() || "index.html";
         const matches =
-          (target === "flashcards" && hrefPage === "notes.html" && href.hash !== "#guide") ||
+          (target === "flashcards" && hrefPage === "flashcards.html" && href.hash !== "#guide") ||
           (target === "guide" && href.hash === "#guide") ||
           (target === "notes" && hrefPage === "index.html" && href.hash !== "#guide");
 
