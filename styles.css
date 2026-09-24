@@ -122,21 +122,11 @@ body {
   margin-top: 0.7rem;
 }
 
-.home-grid {
-  display: grid;
-  gap: clamp(1rem, 3vw, 2rem);
-  padding-top: clamp(2rem, 5vw, 4rem);
-}
-
-.study-launch,
-.alternative-card {
+.study-launch {
   background: var(--card);
   color: var(--ink);
   border: 1px solid var(--line);
   border-radius: var(--radius-card);
-}
-
-.study-launch {
   border-top: 3px solid var(--accent);
   padding: clamp(1.15rem, 3vw, 1.5rem);
 }
@@ -235,64 +225,6 @@ body {
 
 .start-btn {
   padding: 0.7rem 1rem;
-}
-
-.home-alternatives {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.alternative-card {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 1rem;
-  padding: 1.15rem 1.25rem;
-  border-top: 3px solid var(--card-accent);
-  text-decoration: none;
-  transition: border-color 0.18s ease, box-shadow 0.18s ease;
-}
-
-.alternative-card:hover {
-  color: var(--ink);
-  border-color: var(--card-accent);
-  box-shadow: var(--shadow-card);
-}
-
-.questions-card {
-  --card-accent: var(--highlight);
-}
-
-.notes-card {
-  --card-accent: #3c71f7;
-}
-
-.alternative-icon {
-  grid-row: 1;
-  align-self: start;
-  color: var(--card-accent);
-  font-size: 2.7rem;
-  line-height: 1;
-}
-
-.alternative-content {
-  grid-row: 1;
-  align-self: start;
-  display: grid;
-  gap: 0.3rem;
-}
-
-.alternative-content strong {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.65rem;
-  font-weight: 500;
-}
-
-.alternative-content span {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  max-width: 20ch;
-  opacity: 0.72;
 }
 
 /* ========================================================
@@ -701,10 +633,6 @@ body {
     align-items: flex-start;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-
-  .home-alternatives {
-    grid-template-columns: 1fr;
   }
 
   .launch-footer {
