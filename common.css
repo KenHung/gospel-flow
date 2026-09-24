@@ -47,7 +47,7 @@ body {
     color: var(--pico-color);
 }
 
-.site-brand svg {
+.site-brand i {
     flex: none;
     color: var(--pico-primary, currentColor);
 }

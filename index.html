@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Sans+HK:wght@300;400;500;600;700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
   <link rel="stylesheet" href="./common.css?v=20260923" />
   <link rel="stylesheet" href="./styles.css?v=20260923" />
@@ -20,11 +21,7 @@
   <header class="site-nav">
     <div class="container site-nav-inner">
       <a class="site-brand" href="./index.html">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-        </svg>
+        <i class="fa-solid fa-comments" aria-hidden="true"></i>
         Need God 佈道法
       </a>
       <nav>
@@ -58,10 +55,9 @@
           </p>
         </div>
         <section class="study-launch" aria-labelledby="study-title">
-          <div class="section-kicker"><span>01</span> Practice deck</div>
           <div class="launch-copy">
             <div>
-              <h2 id="study-title">Start with a card.</h2>
+              <h2 id="study-title">Flashcards</h2>
               <p>Choose a language and move through the Gospel Flow scenarios at your own pace.</p>
             </div>
           </div>
@@ -93,16 +89,14 @@
       <div class="home-grid">
         <aside class="home-alternatives" aria-label="Other ways to begin">
           <a class="alternative-card questions-card" href="#guide">
-            <span class="card-number">02</span>
-            <span class="alternative-icon" aria-hidden="true">?</span>
+            <i class="alternative-icon fa-solid fa-circle-question" aria-hidden="true"></i>
             <span class="alternative-content">
               <strong>Questions</strong>
               <span>Walk through the full conversation guide.</span>
             </span>
           </a>
           <a class="alternative-card notes-card" href="./notes.html">
-            <span class="card-number">03</span>
-            <span class="alternative-icon" aria-hidden="true">✦</span>
+            <i class="alternative-icon fa-solid fa-note-sticky" aria-hidden="true"></i>
             <span class="alternative-content">
               <strong>Notes</strong>
               <span>Review the stages, cues, and next steps.</span>
