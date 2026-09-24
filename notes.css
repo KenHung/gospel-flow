@@ -277,6 +277,12 @@ header.top-header {
     background-color: color-mix(in srgb, var(--phase-3-color) 5%, transparent);
 }
 
+@media (max-width: 576px) {
+    main.container {
+        padding-inline: 1.25rem;
+    }
+}
+
 @media (min-width: 1200px) {
     .overview-grid {
         grid-template-columns: repeat(5, 1fr);
