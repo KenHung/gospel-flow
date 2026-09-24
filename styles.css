@@ -5,7 +5,7 @@
    ========================================================= */
 
 :root {
-  --bg: var(--pico-background-color);
+  --bg: #fdfbf7;
   --card: var(--pico-card-background-color, var(--pico-background-color));
   --ink: var(--pico-color);
   --muted: var(--pico-muted-color);
