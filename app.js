@@ -103,15 +103,17 @@ createApp({
     syncNavState() {
       const page = location.pathname.split("/").pop() || "index.html";
       const hash = location.hash;
-      const target = page.endsWith("notes.html") ? "notes" : hash === "#guide" ? "guide" : "flashcards";
+      const isNotesHome = page === "index.html";
+      const isFlashcardsPage = page === "notes.html";
+      const target = isFlashcardsPage ? "flashcards" : hash === "#guide" ? "guide" : isNotesHome ? "notes" : "flashcards";
 
       document.querySelectorAll(".site-links a").forEach((link) => {
         const href = new URL(link.href, location.href);
         const hrefPage = href.pathname.split("/").pop() || "index.html";
         const matches =
-          (target === "flashcards" && hrefPage === "index.html" && href.hash !== "#guide") ||
+          (target === "flashcards" && hrefPage === "notes.html" && href.hash !== "#guide") ||
           (target === "guide" && href.hash === "#guide") ||
-          (target === "notes" && hrefPage === "notes.html");
+          (target === "notes" && hrefPage === "index.html" && href.hash !== "#guide");
 
         if (matches) {
           link.setAttribute("aria-current", "page");
