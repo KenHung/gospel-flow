@@ -1,6 +1,43 @@
 :root {
     --font-sans: "Public Sans", "Noto Sans HK", "Microsoft JhengHei", "PingFang TC", "Segoe UI", sans-serif;
     --pico-font-family: var(--font-sans);
+    --bg: #fdfbf7;
+    --card: var(--pico-card-background-color, var(--pico-background-color));
+    --ink: var(--pico-color);
+    --muted: var(--pico-muted-color);
+    --line: var(--pico-muted-border-color);
+    --accent: var(--pico-primary);
+    --brand-accent: var(--pico-primary);
+    --accent-strong: var(--pico-primary-hover-background, var(--pico-primary));
+    --accent-ink: var(--pico-primary-inverse, #ffffff);
+    --guide-accent: var(--pico-primary);
+    --highlight: var(--pico-primary);
+    --correct: var(--pico-success, #1d9d6c);
+    --correct-bg: color-mix(in srgb, var(--correct) 18%, transparent);
+    --wrong: var(--pico-del-color, #d33);
+    --wrong-bg: color-mix(in srgb, var(--wrong) 15%, transparent);
+    --radius-card: 18px;
+    --radius-ctl: 11px;
+    --shadow-card: 0 1px 2px rgba(17, 17, 16, 0.06), 0 18px 40px -24px rgba(17, 17, 16, 0.35);
+}
+
+[data-theme="dark"] {
+    --bg: var(--pico-background-color);
+    --card: var(--pico-card-background-color, var(--pico-background-color));
+    --ink: var(--pico-color);
+    --muted: var(--pico-muted-color);
+    --line: var(--pico-muted-border-color);
+    --accent: var(--pico-primary);
+    --brand-accent: var(--pico-primary);
+    --accent-strong: var(--pico-primary-hover-background, var(--pico-primary));
+    --accent-ink: var(--pico-primary-inverse, #ffffff);
+    --guide-accent: var(--pico-primary);
+    --highlight: var(--pico-primary);
+    --correct: var(--pico-success, #1d9d6c);
+    --correct-bg: color-mix(in srgb, var(--correct) 18%, transparent);
+    --wrong: var(--pico-del-color, #d33);
+    --wrong-bg: color-mix(in srgb, var(--wrong) 15%, transparent);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 44px -26px rgba(0, 0, 0, 0.7);
 }
 
 html {
@@ -11,6 +48,10 @@ body {
     font-family: var(--font-sans);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
+}
+
+[v-cloak] {
+    display: none;
 }
 
 /* =========================================================
