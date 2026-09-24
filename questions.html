@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Need God 佈道法</title>
+    <meta name="description" content="Need God 佈道法" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Sans+HK:wght@300;400;500;600;700;800;900&family=Public+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="./common.css?v=20260923" />
+    <link rel="stylesheet" href="./styles.css?v=20260923" />
+</head>
+
+<body>
+    <header class="site-nav">
+        <div class="container site-nav-inner">
+            <a class="site-brand" href="./index.html">
+                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                Need God 佈道法
+            </a>
+            <nav>
+                <ul class="site-links">
+                    <li><a href="./questions.html" aria-current="page">Questions</a></li>
+                    <li><a href="./flashcards.html">Flashcards</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="app" class="container">
+        <section class="guide">
+            <article v-if="loading" class="guide-state">
+                <p class="muted">Loading guide…</p>
+            </article>
+            <article v-else-if="error" class="guide-state">
+                <p class="error-text">{{ error }}</p>
+                <button class="outline" @click="loadGuide">Retry</button>
+            </article>
+            <article v-else class="guide-document">
+                <div class="markdown" v-html="guideHtml"></div>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const { createApp } = Vue;
+
+        // Match the OS light/dark preference so the palette feels native.
+        const applyTheme = () => {
+            const dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+            document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+        };
+        applyTheme();
+        if (window.matchMedia) {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", applyTheme);
+        }
+
+        createApp({
+            data() {
+                return {
+                    guideHtml: "",
+                    loading: true,
+                    error: "",
+                };
+            },
+            methods: {
+                async loadGuide() {
+                    this.loading = true;
+                    this.error = "";
+                    try {
+                        const res = await fetch("./docs/questions.md", { cache: "no-store" });
+                        if (!res.ok) throw new Error(`Guide request failed (${res.status}).`);
+                        const markdown = await res.text();
+                        this.guideHtml = marked.parse(markdown, { breaks: true });
+                    } catch (e) {
+                        this.error = `Unable to load question guide.${e.message ? ` ${e.message}` : ""}`;
+                    } finally {
+                        this.loading = false;
+                    }
+                },
+            },
+            mounted() {
+                this.loadGuide();
+            },
+        }).mount("#app");
+    </script>
+</body>
+
+</html>

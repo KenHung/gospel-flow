@@ -20,13 +20,10 @@ createApp({
       index: 0,
       flipped: false,        // is the card showing its back (answer)?
       chosen: null,          // MC selected option index
-      screen: "picker",      // 'picker' | 'card' | 'done' | 'guide'
+      screen: "picker",      // 'picker' | 'card' | 'done'
       loading: true,
       starting: false,
       error: "",
-      guideHtml: "",
-      guideLoading: false,
-      guideError: "",
     };
   },
 
@@ -66,61 +63,6 @@ createApp({
       } finally {
         this.loading = false;
       }
-    },
-
-    async loadGuide() {
-      this.guideLoading = true;
-      this.guideError = "";
-      try {
-        const res = await fetch("./docs/questions.md", { cache: "no-store" });
-        if (!res.ok) throw new Error(`Guide request failed (${res.status}).`);
-        const markdown = await res.text();
-        this.guideHtml = marked.parse(markdown, { breaks: true });
-      } catch (e) {
-        this.guideError = `Unable to load question guide.${e.message ? ` ${e.message}` : ""}`;
-      } finally {
-        this.guideLoading = false;
-      }
-    },
-
-    openGuide() {
-      this.screen = "guide";
-      if (!this.guideHtml) this.loadGuide();
-    },
-
-    // The top nav drives the guide via the URL hash so plain-HTML links
-    // (here and on flashcards.html) can reach it. #guide opens the guide;
-    // clearing the hash returns to the picker without clobbering study.
-    syncFromHash() {
-      if (location.hash === "#guide") {
-        this.openGuide();
-      } else if (this.screen === "guide") {
-        this.restart();
-      }
-      this.syncNavState();
-    },
-
-    syncNavState() {
-      const page = location.pathname.split("/").pop() || "index.html";
-      const hash = location.hash;
-      const isNotesHome = page === "index.html";
-      const isFlashcardsPage = page === "flashcards.html";
-      const target = isFlashcardsPage ? "flashcards" : hash === "#guide" ? "guide" : isNotesHome ? "notes" : "flashcards";
-
-      document.querySelectorAll(".site-links a").forEach((link) => {
-        const href = new URL(link.href, location.href);
-        const hrefPage = href.pathname.split("/").pop() || "index.html";
-        const matches =
-          (target === "flashcards" && hrefPage === "flashcards.html" && href.hash !== "#guide") ||
-          (target === "guide" && href.hash === "#guide") ||
-          (target === "notes" && hrefPage === "index.html" && href.hash !== "#guide");
-
-        if (matches) {
-          link.setAttribute("aria-current", "page");
-        } else {
-          link.removeAttribute("aria-current");
-        }
-      });
     },
 
     async start() {
@@ -235,7 +177,5 @@ createApp({
 
   mounted() {
     this.loadManifest();
-    this.syncFromHash();
-    window.addEventListener("hashchange", () => this.syncFromHash());
   },
 }).mount("#app");

@@ -26,7 +26,7 @@
             </a>
             <nav>
                 <ul class="site-links">
-                    <li><a href="./index.html#guide">Questions</a></li>
+                    <li><a href="./questions.html">Questions</a></li>
                     <li><a href="./flashcards.html" aria-current="page">Flashcards</a></li>
                 </ul>
             </nav>
@@ -86,20 +86,6 @@
                     </div>
                 </section>
             </header>
-        </section>
-
-        <!-- ============ GUIDE ============ -->
-        <section v-else-if="screen === 'guide'" class="guide">
-            <article v-if="guideLoading" class="guide-state">
-                <p class="muted">Loading guide…</p>
-            </article>
-            <article v-else-if="guideError" class="guide-state">
-                <p class="error-text">{{ guideError }}</p>
-                <button class="outline" @click="loadGuide">Retry</button>
-            </article>
-            <article v-else class="guide-document">
-                <div class="markdown" v-html="guideHtml"></div>
-            </article>
         </section>
 
         <!-- ============ CARD ============ -->
