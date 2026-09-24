@@ -1,0 +1,180 @@
+/* =========================================================
+   Questions guide — guide/article styling
+   Shared theme tokens keep the guide consistent with the app.
+   ========================================================= */
+
+:root {
+    --bg: #fdfbf7;
+    --card: var(--pico-card-background-color, var(--pico-background-color));
+    --ink: var(--pico-color);
+    --muted: var(--pico-muted-color);
+    --line: var(--pico-muted-border-color);
+    --accent: var(--pico-primary);
+    --brand-accent: var(--pico-primary);
+    --accent-strong: var(--pico-primary-hover-background, var(--pico-primary));
+    --accent-ink: var(--pico-primary-inverse, #ffffff);
+    --guide-accent: var(--pico-primary);
+    --highlight: var(--pico-primary);
+    --correct: var(--pico-success, #1d9d6c);
+    --correct-bg: color-mix(in srgb, var(--correct) 18%, transparent);
+    --wrong: var(--pico-del-color, #d33);
+    --wrong-bg: color-mix(in srgb, var(--wrong) 15%, transparent);
+    --radius-card: 18px;
+    --radius-ctl: 11px;
+    --shadow-card: 0 1px 2px rgba(17, 17, 16, 0.06), 0 18px 40px -24px rgba(17, 17, 16, 0.35);
+}
+
+[data-theme="dark"] {
+    --bg: var(--pico-background-color);
+    --card: var(--pico-card-background-color, var(--pico-background-color));
+    --ink: var(--pico-color);
+    --muted: var(--pico-muted-color);
+    --line: var(--pico-muted-border-color);
+    --accent: var(--pico-primary);
+    --brand-accent: var(--pico-primary);
+    --accent-strong: var(--pico-primary-hover-background, var(--pico-primary));
+    --accent-ink: var(--pico-primary-inverse, #ffffff);
+    --guide-accent: var(--pico-primary);
+    --highlight: var(--pico-primary);
+    --correct: var(--pico-success, #1d9d6c);
+    --correct-bg: color-mix(in srgb, var(--correct) 18%, transparent);
+    --wrong: var(--pico-del-color, #d33);
+    --wrong-bg: color-mix(in srgb, var(--wrong) 15%, transparent);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 44px -26px rgba(0, 0, 0, 0.7);
+}
+
+[v-cloak] {
+    display: none;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--ink);
+}
+
+#app.container {
+    max-width: 74rem;
+    padding-block: clamp(1.5rem, 4vw, 3.5rem);
+    padding-inline: clamp(1.25rem, 5vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.error-text {
+    color: var(--wrong);
+    font-weight: 600;
+}
+
+.state {
+    text-align: center;
+    padding-block: 3rem;
+}
+
+/* ========================================================
+   GUIDE
+   ======================================================== */
+.guide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: min(100%, 44rem);
+    margin-inline: auto;
+}
+
+.guide-state {
+    text-align: center;
+    padding-block: 3rem;
+}
+
+.guide-document {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    padding: clamp(1.25rem, 5vw, 2.5rem);
+    margin: 0;
+    width: min(100%, 44rem);
+    margin-inline: auto;
+}
+
+.markdown {
+    font-size: 1rem;
+    line-height: 1.75;
+    overflow-wrap: anywhere;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 2rem;
+}
+
+.markdown h1 {
+    font-size: 1.7rem;
+}
+
+.markdown h2 {
+    color: var(--guide-accent);
+    display: flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    font-size: 1.35rem;
+    border-top: 2px solid var(--guide-accent);
+    border-bottom: 1px solid var(--line);
+    padding: 1.5rem 0 0.55rem;
+    margin-top: 2.5rem;
+}
+
+.markdown h3 {
+    font-size: 1.1rem;
+}
+
+.markdown p {
+    margin-bottom: 0.9rem;
+    white-space: pre-line;
+}
+
+.markdown ol,
+.markdown ul {
+    padding-left: 1.4rem;
+}
+
+.markdown ol ol {
+    list-style-type: lower-alpha;
+    margin-top: 0.35rem;
+}
+
+.markdown li {
+    padding-left: 0.25rem;
+    margin-bottom: 0.45rem;
+}
+
+.markdown li::marker {
+    color: var(--guide-accent);
+    font-weight: 700;
+}
+
+.markdown strong {
+    color: var(--ink);
+}
+
+@media (max-width: 30rem) {
+    #app.container {
+        padding-inline: 0.75rem;
+    }
+
+    .guide-document {
+        padding: 0;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+}
