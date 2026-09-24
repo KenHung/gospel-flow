@@ -1,58 +1,47 @@
 /* =========================================================
    Recall — flashcard app
-   Base: Pico CSS. This theme follows the supplied Pico palette
-   with a fresh green accent and a warm highlight for answer reveal.
+   Base: Pico CSS. The app keeps the layout, but uses Pico's
+   default theme variables for color and accent styling.
    ========================================================= */
 
 :root {
-  --bg: #fdfbf7;
-  --card: #ffffff;
-  --ink: #111110;
-  --muted: #525f7a;
-  --line: rgba(17, 17, 16, 0.14);
-  --accent: #00895a;
-  --brand-accent: #00895a;
-  --accent-strong: #006d46;
-  --accent-ink: #f6fff9;
-  --guide-accent: #00895a;
-  --highlight: #ffbf00;
-  --correct: #006d46;
-  --correct-bg: #cbfce1;
-  --wrong: #d93526;
-  --wrong-bg: #faeeeb;
+  --bg: var(--pico-background-color);
+  --card: var(--pico-card-background-color, var(--pico-background-color));
+  --ink: var(--pico-color);
+  --muted: var(--pico-muted-color);
+  --line: var(--pico-muted-border-color);
+  --accent: var(--pico-primary);
+  --brand-accent: var(--pico-primary);
+  --accent-strong: var(--pico-primary-hover-background, var(--pico-primary));
+  --accent-ink: var(--pico-primary-inverse, #ffffff);
+  --guide-accent: var(--pico-primary);
+  --highlight: var(--pico-primary);
+  --correct: var(--pico-success, #1d9d6c);
+  --correct-bg: color-mix(in srgb, var(--correct) 18%, transparent);
+  --wrong: var(--pico-del-color, #d33);
+  --wrong-bg: color-mix(in srgb, var(--wrong) 15%, transparent);
   --radius-card: 18px;
   --radius-ctl: 11px;
   --shadow-card: 0 1px 2px rgba(17, 17, 16, 0.06), 0 18px 40px -24px rgba(17, 17, 16, 0.35);
-
-  --pico-background-color: var(--bg);
-  --pico-form-element-background-color: #fffdf9;
-  --pico-color: var(--ink);
-  --pico-primary: var(--accent);
-  --pico-primary-background: var(--accent);
-  --pico-primary-hover-background: var(--accent-strong);
-  --pico-primary-focus: rgba(0, 137, 90, 0.28);
-  --pico-border-radius: var(--radius-ctl);
-  --pico-spacing: 1rem;
 }
 
 [data-theme="dark"] {
-  --bg: #0e1118;
-  --card: #2a3140;
-  --ink: #eff1f4;
-  --muted: #a0acc7;
-  --line: rgba(239, 241, 244, 0.14);
-  --accent: #00c482;
-  --brand-accent: #00c482;
-  --accent-strong: #00b478;
-  --accent-ink: #081610;
-  --guide-accent: #21e299;
-  --highlight: #fecc63;
-  --correct: #21e299;
-  --correct-bg: #233c33;
-  --wrong: #f17961;
-  --wrong-bg: #3a2523;
+  --bg: var(--pico-background-color);
+  --card: var(--pico-card-background-color, var(--pico-background-color));
+  --ink: var(--pico-color);
+  --muted: var(--pico-muted-color);
+  --line: var(--pico-muted-border-color);
+  --accent: var(--pico-primary);
+  --brand-accent: var(--pico-primary);
+  --accent-strong: var(--pico-primary-hover-background, var(--pico-primary));
+  --accent-ink: var(--pico-primary-inverse, #ffffff);
+  --guide-accent: var(--pico-primary);
+  --highlight: var(--pico-primary);
+  --correct: var(--pico-success, #1d9d6c);
+  --correct-bg: color-mix(in srgb, var(--correct) 18%, transparent);
+  --wrong: var(--pico-del-color, #d33);
+  --wrong-bg: color-mix(in srgb, var(--wrong) 15%, transparent);
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 44px -26px rgba(0, 0, 0, 0.7);
-  --pico-primary-focus: rgba(0, 196, 130, 0.35);
 }
 
 [v-cloak] {
@@ -62,14 +51,6 @@
 body {
   background-color: var(--bg);
   color: var(--ink);
-}
-
-.site-brand {
-  color: var(--brand-accent);
-}
-
-.site-brand svg {
-  color: var(--brand-accent);
 }
 
 #app.container {
@@ -93,37 +74,6 @@ body {
 .state {
   text-align: center;
   padding-block: 3rem;
-}
-
-/* ---------- Buttons (shared) ---------- */
-button {
-  font-family: inherit;
-  font-weight: 600;
-  border-radius: var(--radius-ctl);
-  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
-}
-
-button:not(.outline):not(.option) {
-  background-color: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-ink);
-}
-
-button:not(.outline):not(.option):hover:not(:disabled) {
-  background-color: var(--accent-strong);
-  border-color: var(--accent-strong);
-}
-
-button.outline {
-  color: var(--ink);
-  border-color: var(--line);
-  background: transparent;
-}
-
-button.outline:hover:not(:disabled) {
-  color: var(--guide-accent);
-  border-color: var(--guide-accent);
-  background: transparent;
 }
 
 /* ========================================================
