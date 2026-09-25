@@ -194,14 +194,7 @@ body {
         display: flex;
         align-items: center;
         min-height: 2.75rem;
-        padding: 0.55rem 0.7rem;
-        border-radius: var(--radius-ctl);
-    }
-
-    .site-menu.is-open .site-links a[aria-current="page"] {
-        font-weight: 700;
-        text-decoration: none;
-        background: color-mix(in srgb, var(--pico-primary) 14%, transparent);
+        padding: 0.55rem 0.15rem;
     }
 }
 
