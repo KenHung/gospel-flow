@@ -13,7 +13,7 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-    <link rel="stylesheet" href="./common.css?v=20260925" />
+    <link rel="stylesheet" href="./common.css?v=20260925e" />
     <link rel="stylesheet" href="./questions.css?v=20260923" />
 </head>
 
@@ -24,13 +24,21 @@
                 <i class="fa-solid fa-comments" aria-hidden="true"></i>
                 NeedGod 佈道法
             </a>
-            <nav>
-                <ul class="site-links">
-                    <li><a href="./questions.html" aria-current="page">Questions</a></li>
-                    <li><a href="https://www.needgod.net/images/fireball2.jpg" target="_blank" rel="noopener noreferrer">Visuals</a></li>
-                    <li><a href="./flashcards.html">Flashcards</a></li>
-                </ul>
-            </nav>
+            <div class="site-menu">
+                <button type="button" class="site-menu-toggle" aria-expanded="false" aria-controls="site-menu-panel">
+                    <span class="site-menu-label site-menu-label-open">Open menu</span>
+                    <span class="site-menu-label site-menu-label-close">Close menu</span>
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <nav id="site-menu-panel">
+                    <ul class="site-links">
+                        <li><a href="./questions.html" aria-current="page">Questions</a></li>
+                        <li><a href="https://www.needgod.net/images/fireball2.jpg" target="_blank" rel="noopener noreferrer">Visuals</a></li>
+                        <li><a href="./flashcards.html">Flashcards</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -93,6 +101,7 @@
             },
         }).mount("#app");
     </script>
+    <script src="./nav.js?v=20260925d"></script>
 </body>
 
 </html>
