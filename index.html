@@ -13,7 +13,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./common.css?v=20260925f">
-  <link rel="stylesheet" href="./style.css?v=20260925b">
+  <link rel="stylesheet" href="./style.css?v=20260925c">
 </head>
 
 <body>
@@ -84,45 +84,55 @@
 
       <div class="overview-wrapper">
         <div class="overview-grid">
-          <article class="overview-card p0">
-            <header><i class="fa-regular fa-comments"></i> 開場</header>
-            <p><small>主要通過提問了解對方背景，看對方是否信有神、天堂，或至少有開放交流的態度。</small></p>
-            <footer><small><strong>推進條件：</strong>嘗試引導對方思考屬靈事物，有興趣即可進入下一階段。</small></footer>
-          </article>
+          <a class="overview-card-link p0" href="#phase-0">
+            <article class="overview-card">
+              <header><i class="fa-regular fa-comments"></i> 開場</header>
+              <p><small>主要通過提問了解對方背景，看對方是否信有神、天堂，或至少有開放交流的態度。</small></p>
+              <footer><small><strong>推進條件：</strong>嘗試引導對方思考屬靈事物，有興趣即可進入下一階段。</small></footer>
+            </article>
+          </a>
 
           <!-- Mobile skip path representation -->
           <div class="skip-path-mobile">
-            <i class="fa-solid fa-share"></i> 若對方為 <strong>自稱基督徒</strong>，可直接跳至 <strong>測驗</strong>
+            <i class="fa-solid fa-share"></i> 若對方為 <strong>自稱基督徒</strong>，可直接跳至 <a href="#phase-3">測驗</a>
           </div>
 
-          <article class="overview-card p1">
-            <header><i class="fa-solid fa-scale-balanced"></i> 律法</header>
-            <p><small>通過提問讓對方明白神的準則和自己的處境。可用比喻解釋對方的想法並不合理。</small></p>
-            <footer><small><strong>推進條件：</strong>必須讓對方明白自己有罪、難免地獄的火。知罪後進入下一階段。</small></footer>
-          </article>
+          <a class="overview-card-link p1" href="#phase-1">
+            <article class="overview-card">
+              <header><i class="fa-solid fa-scale-balanced"></i> 律法</header>
+              <p><small>通過提問讓對方明白神的準則和自己的處境。可用比喻解釋對方的想法並不合理。</small></p>
+              <footer><small><strong>推進條件：</strong>必須讓對方明白自己有罪、難免地獄的火。知罪後進入下一階段。</small></footer>
+            </article>
+          </a>
 
-          <article class="overview-card p2">
-            <header><i class="fa-solid fa-cross"></i> 福音</header>
-            <p><small>傳講神拯救的好消息。解釋耶穌如何在十字架上為我們承擔 100% 的刑罰，將救恩作為免費禮物賜給我們。</small></p>
-            <footer><small><strong>推進條件：</strong>當對方表示願意接受這份禮物，並初步明白得救是單靠耶穌代贖後，進入測驗階段。</small></footer>
-          </article>
+          <a class="overview-card-link p2" href="#phase-2">
+            <article class="overview-card">
+              <header><i class="fa-solid fa-cross"></i> 福音</header>
+              <p><small>傳講神拯救的好消息。解釋耶穌如何在十字架上為我們承擔 100% 的刑罰，將救恩作為免費禮物賜給我們。</small></p>
+              <footer><small><strong>推進條件：</strong>當對方表示願意接受這份禮物，並初步明白得救是單靠耶穌代贖後，進入測驗階段。</small></footer>
+            </article>
+          </a>
 
-          <article class="overview-card p3">
-            <header><i class="fa-solid fa-clipboard-question"></i> 測驗</header>
-            <p><small>通過假設性與對比性提問，檢視對方是否真正釐清「唯獨恩典，不靠行為」的真理。</small></p>
-            <footer><small><strong>推進條件：</strong>確保對方得救觀中不再混雜行為條件，並有100%確據。</small></footer>
-          </article>
+          <a class="overview-card-link p3" href="#phase-3">
+            <article class="overview-card">
+              <header><i class="fa-solid fa-clipboard-question"></i> 測驗</header>
+              <p><small>通過假設性與對比性提問，檢視對方是否真正釐清「唯獨恩典，不靠行為」的真理。</small></p>
+              <footer><small><strong>推進條件：</strong>確保對方得救觀中不再混雜行為條件，並有100%確據。</small></footer>
+            </article>
+          </a>
 
-          <article class="overview-card p4">
-            <header><i class="fa-solid fa-seedling"></i> 栽培</header>
-            <p><small>接受福音不是結束，是鼓勵對方開始聖潔生活，與悔改的心相稱的機會。</small></p>
-            <footer><small><strong>實踐目標：</strong>鼓勵遠離罪惡、讀聖經、尋找合適教會。</small></footer>
-          </article>
+          <a class="overview-card-link p4" href="#phase-4">
+            <article class="overview-card">
+              <header><i class="fa-solid fa-seedling"></i> 栽培</header>
+              <p><small>接受福音不是結束，是鼓勵對方開始聖潔生活，與悔改的心相稱的機會。</small></p>
+              <footer><small><strong>實踐目標：</strong>鼓勵遠離罪惡、讀聖經、尋找合適教會。</small></footer>
+            </article>
+          </a>
         </div>
 
         <!-- Desktop visual skip arrow -->
         <div class="skip-path-desktop">
-          <div class="skip-path-label"><i class="fa-solid fa-share"></i> 自稱基督徒可跳至測驗</div>
+          <div class="skip-path-label"><i class="fa-solid fa-share"></i> 自稱基督徒可跳至<a href="#phase-3">測驗</a></div>
         </div>
       </div>
     </section>
@@ -130,7 +140,7 @@
     <hr>
 
     <!-- 開場 (Phase 0) -->
-    <section id="phase-0" class="phase-section p0">
+    <section id="phase-0" class="phase-section p0" tabindex="-1">
       <div class="phase-header">
         <div class="phase-icon"><i class="fa-regular fa-comments"></i></div>
         <h2 class="phase-title">開場</h2>
@@ -180,7 +190,7 @@
     </section>
 
     <!-- I. 律法 (Phase 1) -->
-    <section id="phase-1" class="phase-section p1">
+    <section id="phase-1" class="phase-section p1" tabindex="-1">
       <div class="phase-header">
         <div class="phase-icon"><i class="fa-solid fa-scale-balanced"></i></div>
         <h2 class="phase-title">I. 律法</h2>
@@ -277,7 +287,7 @@
     </section>
 
     <!-- II. 福音 (Phase 2) -->
-    <section id="phase-2" class="phase-section p2">
+    <section id="phase-2" class="phase-section p2" tabindex="-1">
       <div class="phase-header">
         <div class="phase-icon"><i class="fa-solid fa-cross"></i></div>
         <h2 class="phase-title">II. 福音</h2>
@@ -383,7 +393,7 @@
     </section>
 
     <!-- III. 測驗 (Phase 3) -->
-    <section id="phase-3" class="phase-section p3">
+    <section id="phase-3" class="phase-section p3" tabindex="-1">
       <div class="phase-header">
         <div class="phase-icon"><i class="fa-solid fa-clipboard-question"></i></div>
         <h2 class="phase-title">III. 測驗</h2>
@@ -474,7 +484,7 @@
     </section>
 
     <!-- IV. 栽培 (Phase 4) -->
-    <section id="phase-4" class="phase-section p4" style="margin-bottom: 4rem;">
+    <section id="phase-4" class="phase-section p4" style="margin-bottom: 4rem;" tabindex="-1">
       <div class="phase-header">
         <div class="phase-icon"><i class="fa-solid fa-seedling"></i></div>
         <h2 class="phase-title">IV. 栽培</h2>

@@ -194,6 +194,11 @@ main.container {
 .phase-section {
     padding-top: 4rem;
     margin-bottom: 2rem;
+    scroll-margin-top: 3.25rem;
+}
+
+.phase-section:focus {
+    outline: none;
 }
 
 .p0 {
@@ -241,8 +246,45 @@ main.container {
     font-weight: 900;
 }
 
+a.overview-card-link {
+    display: flex;
+    height: 100%;
+    /* Pico sets --pico-color to the link blue on every anchor. Card copy
+       reads that variable, so put the page ink back before it inherits. */
+    --pico-color: inherit;
+    color: inherit;
+    text-decoration: none;
+    border-radius: var(--pico-border-radius);
+}
+
+a.overview-card-link:is(:hover, :focus, :active) {
+    --pico-color: inherit;
+    color: inherit;
+    text-decoration: none;
+    background: none;
+}
+
+a.overview-card-link:focus-visible {
+    outline: 2px solid var(--current-phase);
+    outline-offset: 3px;
+}
+
 .overview-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
     border-top: 4px solid var(--current-phase);
+    transition: transform 0.15s ease;
+}
+
+a.overview-card-link:hover .overview-card {
+    transform: translateY(-2px);
+}
+
+.overview-card > p {
+    flex: 1 1 auto;
 }
 
 .overview-card header {
@@ -345,6 +387,20 @@ main.container {
     color: var(--phase-3-color);
     font-weight: bold;
     background-color: color-mix(in srgb, var(--phase-3-color) 5%, transparent);
+}
+
+.skip-path-mobile a,
+.skip-path-label a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.skip-path-mobile a:is(:hover, :focus, :active),
+.skip-path-label a:is(:hover, :focus, :active) {
+    color: inherit;
+    background: none;
 }
 
 @media (max-width: 576px) {
