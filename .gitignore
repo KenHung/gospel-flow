@@ -1,0 +1,28 @@
+# Python bytecode from .grok/skills/decks/scripts/check_decks.py
+__pycache__/
+*.py[cod]
+
+# Local virtualenvs
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Project MCP config can hold tokens. Skills, rules, and workflows stay tracked.
+.grok/config.toml
+
+# Editor and OS junk
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
