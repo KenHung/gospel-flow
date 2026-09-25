@@ -16,6 +16,33 @@ main.container {
     flex: 1 0 auto;
 }
 
+.info-panel {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    margin-top: 1.5rem;
+    padding: 1rem 1.15rem;
+    border: 1px solid color-mix(in srgb, var(--pico-primary) 28%, var(--pico-muted-border-color));
+    border-left: 4px solid var(--pico-primary);
+    border-radius: var(--pico-border-radius);
+    background: color-mix(in srgb, var(--pico-primary) 8%, var(--pico-background-color));
+    color: var(--pico-color);
+}
+
+.info-panel i {
+    flex: none;
+    margin-top: 0.22rem;
+    color: var(--pico-primary);
+    font-size: 1.05rem;
+}
+
+.info-panel p {
+    margin: 0;
+    max-width: 68ch;
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
 .page-footer {
     margin-top: 3rem;
     background: color-mix(in srgb, var(--pico-form-element-background-color) 90%, var(--pico-background-color));
