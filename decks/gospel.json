@@ -9,6 +9,16 @@
         },
         {
             "type": "open",
+            "question": "How should you respond if someone says the universe came from the Big Bang?",
+            "answer": "The Big Bang only describes the physical mechanism of the universe's beginning. Understanding how an engine works does not prove that the engineer who built it does not exist."
+        },
+        {
+            "type": "open",
+            "question": "How should you respond if someone says the creator is not God?",
+            "answer": "If the universe is not eternal, it was created by something eternal, and that creator must exist outside the universe. The creator must be non-material and everlasting, and must have the power and wisdom to create the universe."
+        },
+        {
+            "type": "open",
             "question": "What should you say if someone claims they would be 'innocent' when judged by God?",
             "answer": "Give them the definition: 'Innocent means you've never done anything wrong your whole life, and guilty means you've done at least one bad thing - so which one would you be?'"
         },
