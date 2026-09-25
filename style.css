@@ -9,7 +9,6 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 main.container {
@@ -20,7 +19,6 @@ main.container {
     display: flex;
     align-items: flex-start;
     gap: 0.85rem;
-    margin-top: 1.5rem;
     padding: 1rem 1.15rem;
     border: 1px solid color-mix(in srgb, var(--pico-primary) 28%, var(--pico-muted-border-color));
     border-left: 4px solid var(--pico-primary);
@@ -56,7 +54,6 @@ main.container {
     flex: 0 0 auto;
     width: max-content;
     max-width: 100%;
-    margin-top: 0;
 }
 
 .intro-tools {
@@ -305,6 +302,12 @@ a.overview-card-link:hover .overview-card {
     align-items: baseline;
 }
 
+.key-card > .question-row,
+.highlight-box > .question-row,
+.question-grid .question-row {
+    margin-bottom: 0;
+}
+
 .q-badge {
     background-color: color-mix(in srgb, var(--current-phase) 20%, transparent);
     color: var(--current-phase);
@@ -328,6 +331,43 @@ a.overview-card-link:hover .overview-card {
 .q-content {
     font-size: 1.1rem;
     font-weight: 500;
+}
+
+.q-emphasis {
+    color: var(--current-phase);
+    font-weight: bold;
+}
+
+.phase-text {
+    color: var(--current-phase);
+}
+
+.q-content blockquote {
+    font-size: 1rem;
+}
+
+.q-content blockquote.q-panel {
+    background: var(--pico-background-color);
+}
+
+.key-card {
+    background-color: color-mix(in srgb, var(--current-phase) 5%, transparent);
+    border: 1px solid var(--current-phase);
+}
+
+.question-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: var(--pico-spacing);
+}
+
+.question-grid > article {
+    margin: 0;
+}
+
+.question-grid .q-content {
+    font-size: 1rem;
 }
 
 .highlight-box {
@@ -366,6 +406,37 @@ a.overview-card-link:hover .overview-card {
     color: var(--current-phase);
     margin-bottom: 0.5rem;
     font-size: 1.05rem;
+}
+
+.rebuttal-steps {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+    color: var(--pico-color);
+}
+
+.rebuttal-steps.loose {
+    margin-bottom: 0.5rem;
+}
+
+.goal-list {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.goal-list h6 {
+    color: var(--current-phase);
+    margin-bottom: 0.25rem;
+}
+
+.goal-list h6 i {
+    opacity: 0.7;
+    margin-right: 0.5rem;
+}
+
+.goal-list p {
+    margin: 0;
 }
 
 .overview-wrapper {
