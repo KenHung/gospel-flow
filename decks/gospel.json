@@ -4,7 +4,8 @@
         {
             "type": "open",
             "question": "How should you respond if someone says they do not believe there is a God?",
-            "answer": "Ask if they agree that a building needed a builder rather than appearing by itself. Then explain that just as a building needs a builder, the universe had a beginning and therefore needed a creator."
+            "answer": "Ask if they agree that a building needed a builder rather than appearing by itself. Then explain that just as a building needs a builder, the universe had a beginning and therefore needed a creator.",
+            "explanation": "Other directions include: ask whether the world is meaningless, so that being a good or bad person does not matter. Ask where people's moral standards come from."
         },
         {
             "type": "open",
@@ -13,7 +14,7 @@
         },
         {
             "type": "open",
-            "question": "How do you respond if someone says they deserve a 'reward' for their actions instead of punishment?",
+            "question": "How do you respond if someone says they deserve a 'reward' for their crimes instead of punishment?",
             "answer": "Ask them, 'Would a policeman give me a bunch of flowers for speeding OR a penalty notice?' If they still say reward, ask what country would give flowers for speeding."
         },
         {
@@ -68,11 +69,6 @@
         },
         {
             "type": "open",
-            "question": "How do you reply if someone says \"heaven\" when asked where they would end up if they don't accept the gift of Jesus paying for their sins?",
-            "answer": "Use a gift analogy: \"If I offered you a gift today, but you didn't accept it from me, have you actually received that gift?\" Explain that if we don't accept Jesus's gift, we won't receive it."
-        },
-        {
-            "type": "open",
             "question": "What should you ask if they answer \"before you die\" when you ask WHEN they should start trusting Jesus?",
             "answer": "Ask them, \"Do you know when you will die? If not, when should you start trusting that Jesus paid for your sins?\""
         },
@@ -88,13 +84,48 @@
         },
         {
             "type": "open",
-            "question": "How can you use a car-washing analogy to explain that heaven is a completely free gift?",
-            "answer": "Ask, \"If I said 'I'll give you a gift of $20 if you wash my car'. Is that $20 really a gift?\" Explain that Jesus doesn't say \"I'll die for you if you do good things\" because that wouldn't be a free gift."
+            "question": "How should you respond to someone who acknowledges their church teaches the wrong way to heaven?",
+            "answer": "Ask, \"So do you think it's a good idea to keep attending a church that teaches the wrong way to heaven?\" and suggest they find a Bible-teaching church or provide resources to grow their faith."
         },
         {
             "type": "open",
-            "question": "How should you respond to someone who acknowledges their church teaches the wrong way to heaven?",
-            "answer": "Ask, \"So do you think it's a good idea to keep attending a church that teaches the wrong way to heaven?\" and suggest they find a Bible-teaching church or provide resources to grow their faith."
+            "question": "How should you respond if someone says they have done good things or will make up for what they have done?",
+            "answer": "Ask them: if you were caught breaking the law and told the judge, 'I have done good things' or 'I will make up for it,' and asked to be forgiven, would the judge just let you go?"
+        },
+        {
+            "type": "open",
+            "question": "How should you respond if someone says everybody sins like this, so it does not count?",
+            "answer": "Ask them: if you were caught running a red light and told the officer, 'Everybody does it,' would the officer just let you go?"
+        },
+        {
+            "type": "open",
+            "question": "How should you respond if someone says they do not think they have done anything wrong?",
+            "answer": "Explain that in someone else's home you have to follow their rules, or you offend them. The God who created the universe also has the right to set the rules, and not keeping them is offending God."
+        },
+        {
+            "type": "open",
+            "question": "How should you respond if someone says their sin is not serious enough for God to punish them that severely?",
+            "answer": "Ask whether there is sin in heaven, whether anyone there still gets cheated, and whether anyone there still lies, because liars do not go to heaven. If they accept the Bible, you can use Revelation 21:8."
+        },
+        {
+            "type": "open",
+            "question": "How should you respond if someone says God will forgive everybody?",
+            "answer": "Ask whether a judge who says he will forgive everybody would be a good judge. Ask whether Hitler would go to heaven. Then ask: if God is more just than a judge, would he look the other way when people sin?"
+        },
+        {
+            "type": "open",
+            "question": "How should you respond if someone does not understand grace?",
+            "answer": "Explain that if you are paid $20 for buying takeout, that $20 is wages, not grace. God's salvation is free. We do not earn it by what we do."
+        },
+        {
+            "type": "open",
+            "question": "How should you respond if someone says, 'I am the one who sinned, so I should die, not God; that is unfair'?",
+            "answer": "Ask whether, after jaywalking and being hit by a car, barely alive, they would refuse the ambulance because they deserved it. Ask whether, seriously ill, they would throw away medicine a close friend had sold everything to buy, and bear it themselves."
+        },
+        {
+            "type": "open",
+            "question": "How should you respond if someone still thinks a friend can go to heaven just by being a good person?",
+            "answer": "Ask again what the only reason is for going to heaven (Jesus). If the friend relies only on their own actions and refuses the gift, they end up in Hell."
         },
         {
             "type": "mc",
