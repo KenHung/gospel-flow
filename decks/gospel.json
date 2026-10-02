@@ -46,7 +46,7 @@
         },
         {
             "type": "open",
-            "question": "If someone struggles to understand that zero punishment is left if Jesus pays it all, what analogy can you use?",
+            "question": "If someone struggles to understand that 'Jesus paid the full price, so we do not have to bear any punishment,' what analogy can you use?",
             "answer": "Use the speeding fine analogy: 'If you had a $1000 speeding fine and someone pays all $1000 for you as a gift. How much is left for you to pay?'"
         },
         {
@@ -56,7 +56,7 @@
         },
         {
             "type": "open",
-            "question": "How should you respond to someone who believes they are going to heaven because Jesus died for their sins AND they have been a good person?",
+            "question": "How should you respond if someone believes they are going to heaven because of two conditions: Jesus died for their sins, and they have been a good person?",
             "answer": "Explain that by trusting in two things, it becomes 50% Jesus and 50% their actions. If they are trusting partly in themselves and not ONLY in Jesus, they would end up in Hell."
         },
         {
@@ -76,7 +76,7 @@
         },
         {
             "type": "open",
-            "question": "If you ask, \"If you trust Jesus today, but tomorrow you sin 5 more times and then die, would you still go to Heaven? Why?\" and they say Hell, how do you respond?",
+            "question": "If someone says they trust Jesus, and you ask, \"You trust Jesus today, but tomorrow you sin 5 more times and then die. Can you still go to heaven?\" and they say they cannot, how do you respond?",
             "answer": "Ask, \"What was getting you into heaven again?\" (Jesus.) \"And does Jesus pay for just your past sins or also your future sins?\" If they say future, repeat the question. If they say past only, say, \"If Jesus died for 100% of your sins, that would have to include your future sins right?\""
         },
         {
@@ -91,7 +91,7 @@
         },
         {
             "type": "open",
-            "question": "What analogy can you use if someone cannot explain why we should do good things if good deeds don't get us to heaven?",
+            "question": "If someone asks, \"Since good deeds cannot get us into heaven, why should we still do good things?\" what analogy can you use to answer?",
             "answer": "Use the fireman analogy: \"If you are in a burning building and a fireman risks his life to bring you out to safety, what would you want to do for that fireman who saved you?\" Explain we do good things out of thankfulness."
         },
         {
@@ -101,7 +101,7 @@
         },
         {
             "type": "open",
-            "question": "How should you respond if someone says they have done good things or will make up for what they have done?",
+            "question": "How should you respond if someone says they have done good things, or will make up for it later, so sinning does not matter?",
             "answer": "Ask them: if you were caught breaking the law and told the judge, 'I have done good things' or 'I will make up for it,' and asked to be forgiven, would the judge just let you go?"
         },
         {
@@ -136,12 +136,12 @@
         },
         {
             "type": "open",
-            "question": "How should you respond if someone still thinks a friend can go to heaven just by being a good person?",
+            "question": "How should you respond if someone thinks a friend can go to heaven just by being a good person and doing good deeds?",
             "answer": "Ask again what the only reason is for going to heaven (Jesus). If the friend relies only on their own actions and refuses the gift, they end up in Hell."
         },
         {
             "type": "mc",
-            "question": "If doing good things doesn't get us into heaven, what is the script's primary reason for why we should do good things?",
+            "question": "If doing good things doesn't get us into heaven, what is the primary reason we should do good things?",
             "options": [
                 "To impress other people",
                 "Because we are thankful for what Jesus has done",
@@ -153,7 +153,7 @@
         },
         {
             "type": "mc",
-            "question": "According to the script, what does 'repentance' actually mean?",
+            "question": "What does 'repentance' actually mean?",
             "options": [
                 "Just asking for forgiveness",
                 "Doing a certain number of good deeds",
@@ -177,7 +177,7 @@
         },
         {
             "type": "mc",
-            "question": "Which analogy is used to explain that zero punishment is left if Jesus pays for it all?",
+            "question": "What analogy explains that Jesus paid the full price, so zero punishment is left?",
             "options": [
                 "The burning building analogy",
                 "The $1000 speeding fine analogy",
@@ -189,12 +189,11 @@
         },
         {
             "type": "mc",
-            "question": "If someone thinks they are going to heaven because Jesus died for their sins AND they have been a good person, where does the script say they will end up?",
+            "question": "If someone thinks they are going to heaven because of two conditions: Jesus died for their sins, and they have been a good person, where will they end up?",
             "options": [
                 "Heaven",
                 "Purgatory",
-                "Hell",
-                "Limbo"
+                "Hell"
             ],
             "answer": 2,
             "explanation": "By trusting in two things, they aren't trusting 100% in Jesus. It becomes 50% Jesus and 50% their actions, meaning they would end up in Hell because they must trust ONLY in Jesus."
